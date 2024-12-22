@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".csm.fragment.RewardFragment"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="220dp">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/img_csm_dark_back"
+            android:scaleType="centerCrop"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/bg_csm_stars"
+            android:scaleType="centerCrop"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp">
+
+            <TextView
+                android:layout_marginTop="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/main_one"
+                android:text="REWARDS"
+                android:textColor="@color/white"
+                android:textSize="25dp" />
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:layout_below="@+id/top"
+            android:layout_marginBottom="-2dp"
+            android:background="@drawable/bg_csm_top_stroke"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="90dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:paddingBottom="30dp"
+                    android:visibility="gone"
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"/>
+                <RelativeLayout
+                    android:id="@+id/loading"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/adProgress"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"
+                        app:lottie_rawRes="@raw/loading">
+                    </com.airbnb.lottie.LottieAnimationView>
+
+                    <TextView
+                        android:visibility="gone"
+                        android:layout_marginBottom="50dp"
+                        android:layout_marginTop="50dp"
+                        android:background="@color/colorPrimaryDark"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="Players not founsxczd!!"
+                        android:textColor="#CEFFFFFF"
+                        android:id="@+id/error_text"/>
+
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="118dp"
+        android:visibility="visible"
+        android:layout_marginHorizontal="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        app:cardCornerRadius="6dp"
+        app:cardBackgroundColor="@color/colorPrimaryDark">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_csm_refer_copy">
+
+            <ImageView
+                android:id="@+id/history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/btn_csm_history"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="-10dp"
+                android:layout_marginTop="-10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HISTORY"
+                android:fontFamily="@font/main_one"
+                android:textSize="14dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="9dp"
+                android:layout_marginRight="9dp"
+                android:textColor="@color/white"/>
+
+            <LinearLayout
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BALANCE"
+                    android:fontFamily="@font/main_one"
+                    android:textSize="22dp"
+                    android:textColor="@color/white"/>
+
+                <LinearLayout
+                    android:layout_marginTop="1dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/rupee"
+                        android:layout_width="17dp"
+                        android:layout_height="17dp"
+                        android:src="@drawable/csm_coin" />
+
+                    <TextView
+                        android:id="@+id/points"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="-1dp"
+                        android:fontFamily="@font/main_two"
+                        android:text="1000 Coins"
+                        android:textColor="#F6F3FF"
+                        android:textSize="14sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="25dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="6dp"
+                        android:layout_marginTop="4dp"
+                        android:max="500"
+                        android:progress="400"
+                        android:progressDrawable="@drawable/progress_csm_golden" />
+
+                    <TextView
+                        android:id="@+id/status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-1dp"
+                        android:fontFamily="@font/main_two"
+                        android:text="Not Eligible For Redeem"
+                        android:textColor="#F6F3FF"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_marginBottom="10dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginRight="8dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp">
+
+                        <LinearLayout
+                            android:id="@+id/wallet"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="7dp"
+                            android:background="@drawable/btn_csm_trans"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2">
+
+                            <TextView
+                                android:gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="transaction"
+                                android:textAllCaps="true"
+                                android:fontFamily="@font/main_one"
+                                android:textSize="19dp"
+                                android:textColor="@color/white"/>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/csmDiamondBtn"
+                            android:paddingTop="12dp"
+                            android:gravity="center_vertical"
+                            android:layout_marginLeft="7dp"
+                            android:background="@drawable/btn_csm_diamond"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.1">
+
+                            <ImageView
+                                android:layout_marginLeft="8dp"
+                                android:layout_width="31dp"
+                                android:layout_height="31dp"
+                                android:src="@drawable/img_csm_diamond"/>
+
+                            <TextView
+                                android:layout_marginLeft="2dp"
+                                android:gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="diamond store"
+                                android:textAllCaps="true"
+                                android:fontFamily="@font/main_one"
+                                android:textSize="19dp"
+                                android:textColor="#8D3915"/>
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+</RelativeLayout>

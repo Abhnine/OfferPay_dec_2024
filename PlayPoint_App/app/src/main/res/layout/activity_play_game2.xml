@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".csm.activity.PlayGame">
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_alignParentRight="true"
+        android:id="@+id/drag"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="35dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:outlineAmbientShadowColor="@color/white"
+            android:outlineSpotShadowColor="#00FFFFFF"
+            app:cardBackgroundColor="#00FFFFFF"
+            app:cardCornerRadius="38dp" >
+
+
+            <ImageView
+                android:id="@+id/img_shine"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="-50dp"
+                android:src="@drawable/csm_btn_shin" />
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:id="@+id/shine"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="0.5dp"
+            android:layout_marginTop="0.5dp"
+            android:layout_marginEnd="0.5dp"
+            android:layout_marginBottom="0.5dp"
+            android:background="@drawable/ovel"
+            android:orientation="horizontal" />
+
+        <LinearLayout
+            android:layout_width="53dp"
+            android:layout_height="53dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_csm_game_progress" />
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:indeterminate="false"
+            android:progress="110"
+            android:progressDrawable="@drawable/circular_csm_progress_dark"
+            android:rotation="110"
+            android:textAlignment="center" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:indeterminate="false"
+            android:progress="75"
+            android:progressDrawable="@drawable/circular_progress_bar"
+            android:rotation="110"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/coins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/main_one"
+            android:text="200"
+            android:textColor="#8D3915"
+            android:textSize="12dp" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/close"
+        android:layout_marginLeft="-7dp"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_csm_game_close"
+        android:paddingLeft="7dp"
+        android:gravity="center">
+        
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/close"
+            app:tint="@color/white" />
+        
+    </LinearLayout>
+
+    <RelativeLayout
+        android:gravity="center"
+        android:id="@+id/loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:clickable="true"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/bg_csm_blur"
+            android:scaleType="centerCrop"/>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/adProgress"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/loading" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

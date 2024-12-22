@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".LoginEmail">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg_csm_login_back"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:fontFamily="@font/main_one"
+            android:text="REGISTER"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="44dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:fontFamily="@font/main_two"
+            android:gravity="center_horizontal"
+            android:text="sign uP to CREATE A NEW ACCOUNT"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="13dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="480dp"
+            android:background="@drawable/bg_csm_login_card"
+            android:layout_marginTop="45dp"
+            android:gravity="center_horizontal"
+            android:layout_marginHorizontal="12dp">
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/main_one"
+                android:text="Sign up"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="22dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:background="@drawable/bg_csm_ed_login"
+                android:layout_marginTop="25dp"
+                android:layout_marginHorizontal="15dp">
+
+                <LinearLayout
+                    android:layout_width="53dp"
+                    android:layout_height="53dp"
+                    android:gravity="center"
+                    android:background="@drawable/bg_csm_login_icon">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_csm_name_login"/>
+
+                </LinearLayout>
+
+                <EditText
+                    android:inputType="textPersonName"
+                    android:id="@+id/edName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:background="@null"
+                    android:hint="name"
+                    android:textColorHint="#94B6B0C8"
+                    android:textColor="@color/white"
+                    android:paddingRight="8dp"
+                    android:fontFamily="@font/main_two"
+                    android:textSize="13.5dp"
+                    android:layout_marginLeft="10dp"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:background="@drawable/bg_csm_ed_login"
+                android:layout_marginTop="15dp"
+                android:layout_marginHorizontal="15dp">
+
+                <LinearLayout
+                    android:layout_width="53dp"
+                    android:layout_height="53dp"
+                    android:gravity="center"
+                    android:background="@drawable/bg_csm_login_icon">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_csm_email_login"/>
+
+                </LinearLayout>
+
+                <EditText
+                    android:inputType="textEmailAddress"
+                    android:id="@+id/edEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:background="@null"
+                    android:hint="example@email.com"
+                    android:textColorHint="#94B6B0C8"
+                    android:textColor="@color/white"
+                    android:paddingRight="8dp"
+                    android:fontFamily="@font/main_two"
+                    android:textSize="13.5dp"
+                    android:layout_marginLeft="10dp"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:background="@drawable/bg_csm_ed_login"
+                android:layout_marginTop="15dp"
+                android:layout_marginHorizontal="15dp">
+
+                <LinearLayout
+                    android:layout_width="53dp"
+                    android:layout_height="53dp"
+                    android:gravity="center"
+                    android:background="@drawable/bg_csm_login_icon">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_csm_pass_login"/>
+
+                </LinearLayout>
+
+                <EditText
+                    android:inputType="textPassword"
+                    android:id="@+id/edPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:background="@null"
+                    android:hint="password"
+                    android:textColorHint="#94B6B0C8"
+                    android:textColor="@color/white"
+                    android:paddingRight="8dp"
+                    android:fontFamily="@font/main_two"
+                    android:textSize="13.5dp"
+                    android:layout_marginLeft="10dp"/>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:background="@drawable/bg_csm_ed_login"
+                android:layout_marginTop="15dp"
+                android:layout_marginHorizontal="15dp">
+
+                <LinearLayout
+                    android:layout_width="53dp"
+                    android:layout_height="53dp"
+                    android:gravity="center"
+                    android:background="@drawable/bg_csm_login_icon">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_csm_pass_login"/>
+
+                </LinearLayout>
+
+                <EditText
+                    android:inputType="textPassword"
+                    android:id="@+id/edCPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:background="@null"
+                    android:hint="conform password"
+                    android:textColorHint="#94B6B0C8"
+                    android:textColor="@color/white"
+                    android:paddingRight="8dp"
+                    android:fontFamily="@font/main_two"
+                    android:textSize="13.5dp"
+                    android:layout_marginLeft="10dp"/>
+
+
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/signup_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_csm_login"
+                android:layout_marginHorizontal="13dp"
+                android:layout_marginTop="35dp"
+                android:text="Sign up"
+                android:fontFamily="@font/main_one"
+                android:textColor="@color/white"
+                android:textSize="22sp"/>
+
+
+            <LinearLayout
+                android:id="@+id/login"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/main_two"
+                    android:gravity="center_horizontal"
+                    android:text="Already have an account ? "
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/main_two"
+                    android:gravity="center_horizontal"
+                    android:text="Sign in."
+                    android:textColor="#FBB216"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="38dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/main_one"
+            android:text="By Continuing , You Agree To Our"
+            android:textColor="@color/white"
+            android:textSize="17dp" />
+
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="18dp"
+            android:fontFamily="@font/main_one"
+            android:linksClickable="true"
+            android:text="Terms And Conditions And Privacy Policy"
+            android:textColor="@color/white"
+            android:textSize="12dp" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

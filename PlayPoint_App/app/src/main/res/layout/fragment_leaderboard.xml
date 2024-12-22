@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".csm.fragment.LeaderboardFragment"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_marginTop="-5dp"
+        android:layout_width="match_parent"
+        android:layout_height="450dp">
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/img_csm_dark_back"
+            android:scaleType="centerCrop"/>
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:src="@drawable/bg_csm_stars"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp">
+
+            <TextView
+                android:layout_marginTop="60dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/main_one"
+                android:text="LEADERBOARD"
+                android:textColor="@color/white"
+                android:textSize="25dp" />
+
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="-130dp"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:layout_above="@+id/imageView2"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_marginTop="115dp"
+                android:paddingHorizontal="17dp"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_weight="3">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_2nd"
+                    android:layout_width="match_parent"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="28.5dp"
+                    android:src="@mipmap/ic_launcher"
+                    android:layout_marginHorizontal="3dp"/>
+
+                <ImageView
+                    android:id="@+id/frame_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:src="@drawable/csm_leader_two"/>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/frame_2"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/csm_coin"/>
+
+                        <TextView
+                            android:id="@+id/coins_2nd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="15000"
+                            android:layout_marginLeft="2dp"
+                            android:fontFamily="@font/main_one"
+                            android:textColor="@color/white"/>
+
+                        <LinearLayout
+                            android:layout_marginLeft="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="11dp"
+                            android:background="@drawable/bg_csm_level"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/csm_level_2"
+                                android:layout_marginTop="-1dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="4dp"
+                                android:text="Lv.99"
+                                android:fontFamily="@font/main_two"
+                                android:textColor="@color/white"
+                                android:textSize="7dp"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_marginTop="2dp"
+                        android:id="@+id/txt_2nd"
+                        android:fontFamily="@font/main_one"
+                        android:textAllCaps="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="John snow"
+                        android:maxLines="1"
+                        android:textSize="14sp"
+                        android:ellipsize="end"
+                        android:textColor="@color/white" />
+
+
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="80dp"
+                android:paddingHorizontal="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_1st"
+                    android:layout_width="match_parent"
+                    android:layout_height="105dp"
+                    android:layout_marginTop="37dp"
+                    android:src="@mipmap/ic_launcher"
+                    android:layout_marginHorizontal="3dp"/>
+
+                <ImageView
+                    android:id="@+id/frame_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:src="@drawable/csm_leader_one"/>
+
+                <LinearLayout
+                    android:layout_marginTop="-10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/frame_1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/csm_coin"/>
+
+                        <TextView
+                            android:id="@+id/coins_1st"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="15000"
+                            android:textSize="13dp"
+                            android:layout_marginLeft="2dp"
+                            android:fontFamily="@font/main_one"
+                            android:textColor="@color/white"/>
+
+
+                        <LinearLayout
+                            android:layout_marginLeft="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="11dp"
+                            android:background="@drawable/bg_csm_level"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/csm_level_1"
+                                android:layout_marginTop="-1dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="4dp"
+                                android:text="Lv.99"
+                                android:fontFamily="@font/main_two"
+                                android:textColor="@color/white"
+                                android:textSize="7dp"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_marginTop="2dp"
+                        android:id="@+id/txt_1st"
+                        android:fontFamily="@font/main_one"
+                        android:textAllCaps="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="John snow"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:textSize="14dp"
+                        android:textColor="@color/white" />
+
+
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="145dp"
+                android:paddingHorizontal="23dp"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_weight="3">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_3rd"
+                    android:layout_width="match_parent"
+                    android:layout_height="83dp"
+                    android:layout_marginTop="22.5dp"
+                    android:src="@mipmap/ic_launcher"
+                    android:layout_marginHorizontal="3dp"/>
+
+                <ImageView
+                    android:id="@+id/frame_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="115dp"
+                    android:src="@drawable/csm_leader_three"/>
+
+                <LinearLayout
+                    android:layout_marginTop="7dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/frame_3"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/csm_coin"/>
+
+                        <TextView
+                            android:id="@+id/coins_3rd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="15000"
+                            android:textSize="12sp"
+                            android:layout_marginLeft="2dp"
+                            android:fontFamily="@font/main_one"
+                            android:textColor="@color/white"/>
+
+                        <LinearLayout
+                            android:layout_marginLeft="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="11dp"
+                            android:background="@drawable/bg_csm_level"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/csm_level_3"
+                                android:layout_marginTop="-1dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="4dp"
+                                android:text="Lv.99"
+                                android:fontFamily="@font/main_two"
+                                android:textColor="@color/white"
+                                android:textSize="7dp"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_marginTop="2dp"
+                        android:id="@+id/txt_3rd"
+                        android:fontFamily="@font/main_one"
+                        android:textAllCaps="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="John snow"
+                        android:maxLines="1"
+                        android:textSize="14sp"
+                        android:ellipsize="end"
+                        android:textColor="@color/white" />
+
+
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_alignParentBottom="true"
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:layout_marginHorizontal="15dp"
+            android:src="@drawable/bg_csm_leaders"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="15dp" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="-4dp"
+        android:layout_marginRight="-2dp"
+        android:layout_marginLeft="-2dp"
+        android:layout_marginTop="-65dp"
+        android:background="@drawable/csm_leaderboard_top_round"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.core.widget.NestedScrollView
+                android:visibility="gone"
+                android:layout_marginTop="15dp"
+                android:id="@+id/scroll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:paddingBottom="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"/>
+
+                </LinearLayout>
+
+
+            </androidx.core.widget.NestedScrollView>
+
+            <RelativeLayout
+                android:id="@+id/loading"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/adProgress"
+                    android:layout_width="60dp"
+                    android:layout_centerInParent="true"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/loading">
+                </com.airbnb.lottie.LottieAnimationView>
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_marginBottom="50dp"
+                    android:layout_marginTop="50dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Players not founsxczd!!"
+                    android:textColor="#CEFFFFFF"
+                    android:id="@+id/error_text"/>
+
+
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

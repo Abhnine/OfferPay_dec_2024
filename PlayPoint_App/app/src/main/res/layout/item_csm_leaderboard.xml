@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_marginTop="6dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="6dp"
+    android:background="@color/colorPrimaryDark"
+    android:layout_marginHorizontal="15dp">
+
+    <RelativeLayout
+        android:background="@drawable/bg_csm_home_btn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/left"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_csm_ovel_14"
+            android:layout_marginLeft="-20dp"
+            android:layout_marginTop="-10dp"
+            android:layout_marginBottom="-10dp"
+            android:orientation="horizontal" />
+
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:id="@+id/rank"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/main_one"
+            android:gravity="center"
+            android:text="#99"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+        
+
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@id/left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="1dp"
+                android:layout_marginLeft="2dp"
+                android:src="@mipmap/ic_launcher" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/main_one"
+                    android:text="John snow"
+                    android:textColor="@color/white"
+                    android:textSize="21sp" />
+
+                <LinearLayout
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="13dp"
+                    android:background="@drawable/bg_csm_level"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/level"
+                        android:layout_marginTop="-1dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="4dp"
+                        android:text="Lv.100"
+                        android:fontFamily="@font/main_two"
+                        android:textColor="@color/white"
+                        android:textSize="8dp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="-40dp"
+            android:layout_width="125dp"
+            android:scaleType="centerCrop"
+            android:layout_height="105dp"
+            android:src="@drawable/bg_csm_task_btn_pending" />
+
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:src="@drawable/csm_coin" />
+
+            <TextView
+                android:id="@+id/coins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:fontFamily="@font/main_one"
+                android:text="1000"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/bg_spin"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/arrow_back_2"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            app:tint="@color/white" />
+
+        <RelativeLayout
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/bell_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:rotationY="180"
+                android:id="@+id/coinbar_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/coinbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="22.10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="-15dp"
+                    android:layout_toEndOf="@+id/img_coin"
+                    android:background="@drawable/csm_bg_coinsbar">
+
+                    <TextView
+                        android:id="@+id/coins"
+                        android:rotationY="-190"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="22dp"
+                        android:fontFamily="@font/main_two"
+                        android:text="100"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="-2dp"
+                        android:textSize="12dp" />
+
+
+                </RelativeLayout>
+
+
+                <ImageView
+                    android:id="@+id/img_coin"
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/csm_coin" />
+
+                <ImageView
+                    android:id="@+id/img_coin_plus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="-15dp"
+                    android:layout_toEndOf="@+id/coinbar"
+                    android:src="@drawable/csm_coins_plus" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginRight="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toEndOf="@+id/coinbar_layout">
+
+                <RelativeLayout
+                    android:rotationY="180"
+                    android:id="@+id/coinbar_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="22.10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="-17dp"
+                    android:layout_toEndOf="@+id/img_coin_1"
+                    android:background="@drawable/csm_bg_coinsbar">
+
+                    <TextView
+                        android:id="@+id/diamond"
+                        android:rotationY="-180"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="22dp"
+                        android:layout_marginRight="22dp"
+                        android:fontFamily="@font/main_two"
+                        android:text="100"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="-2dp"
+                        android:textSize="12dp" />
+
+
+                </RelativeLayout>
+
+
+                <ImageView
+                    android:id="@+id/img_coin_1"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_csm_diamond" />
+
+                <ImageView
+                    android:id="@+id/img_coin_plus_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="-15dp"
+                    android:layout_toEndOf="@+id/coinbar_1"
+                    android:src="@drawable/ic_csm_diamond_plus" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_csm_spin_count"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/sc_layout"
+        android:layout_marginBottom="-10dp">
+
+        <TextView
+            android:id="@+id/left"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0/0 left"
+            android:textAllCaps="true"
+            android:textSize="16dp"
+            android:textColor="#8D3915"
+            android:fontFamily="@font/main_one"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frame" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/sc_layout"
+        android:layout_centerInParent="true"
+        android:layout_width="330dp"
+        android:layout_height="330dp">
+        <LinearLayout
+            android:background="@drawable/bg_csm_scratch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/top"
+                android:fontFamily="@font/main_one"
+                android:textSize="30dp"
+                android:textColor="@color/white"
+                android:textAllCaps="true"
+                android:text="congratulations!" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/top"
+                android:fontFamily="@font/main_one"
+                android:textSize="22dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:text="You’ve Won" />
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/csm_coin"
+                    android:layout_marginRight="10dp"/>
+
+                <TextView
+                    android:id="@+id/reward_coins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="&#45;&#45;"
+                    android:textSize="60dp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/main_one"/>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+        <in.myinnos.androidscratchcard.ScratchCard
+            android:id="@+id/scratchCard"
+            app:scratchWidth="50dp"
+            android:layout_width="330dp"
+            android:layout_height="330dp"
+            app:scratchDrawable="@drawable/img_csm_scratch_card"
+            android:layout_centerInParent="true"/>
+
+
+        <ImageView
+            android:clickable="true"
+            android:id="@+id/blockScratch"
+            android:layout_width="330dp"
+            android:layout_height="330dp"
+            android:focusable="true"
+            android:src="@drawable/img_csm_scratch_card"
+            android:visibility="gone"/>
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

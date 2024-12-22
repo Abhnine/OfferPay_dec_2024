@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="42dp"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginTop="6dp"
+    android:background="@drawable/bg_csm_steps_back">
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/ovel_csm_steps"
+        android:layout_marginTop="-30dp"
+        android:layout_marginBottom="-10dp"
+        android:layout_marginLeft="-60dp"/>
+
+    <TextView
+        android:id="@+id/step"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1."
+        android:fontFamily="@font/main_one"
+        android:textSize="23dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="13dp"/>
+
+    <TextView
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="55dp"
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:fontFamily="@font/main_two"
+        android:maxLines="2"
+        android:lineSpacingExtra="-7dp"
+        android:text="Complete offer and earn offer and earnlete offer and earn offer and ealete offer and earn offer and ea"
+        android:textAllCaps="false"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/white"
+        android:textSize="11dp" />
+
+</RelativeLayout>

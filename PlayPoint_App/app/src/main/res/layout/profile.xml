@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_208sdp">
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/img_csm_dark_back"
+            android:scaleType="centerCrop"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="93dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginHorizontal="15dp">
+            
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="93dp"
+                android:layout_height="93dp"
+                android:src="@mipmap/ic_launcher"
+                app:riv_corner_radius="20dp"
+                app:riv_border_width="2dp"
+                app:riv_border_color="@color/white"/>
+            
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CSM User-name"
+                    android:fontFamily="@font/main_one"
+                    android:textColor="@color/white"
+                    android:textSize="29dp"/>
+
+            </LinearLayout>
+
+
+            
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#25184E"/>
+
+</LinearLayout>

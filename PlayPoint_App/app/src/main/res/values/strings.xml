@@ -1,0 +1,67 @@
+<resources>
+    <!--App Name-->
+    <string name="app_name">OfferPay</string>
+    <!--App Name end-->
+
+    <!--referral screen text-->
+    <string name="refer_title">refer your friends and earn</string>
+    <!--referral screen text end-->
+
+    <!--contact-->
+    <string name="contect_email">test@gmail.com</string>
+    <!--contact end-->
+
+    <!--one signal-->
+    <string name="one_signal_app_id">a6964d56-eed1-41a6-b16f-eb2d336076ac</string> <!--set false for live mode-->
+    <!--one signal end-->
+
+    <!--admob-->
+    <string name="Admob_app_id" translatable="false">ca-app-pub-3940256099942544~3347511713</string>
+    <!--admob end-->
+
+    <!--Applovin Max-->
+    <string name="maxSdkKey">XNRSANK5Qb67TKFiLqTV0CdybZLd4a3ggO8IC4PzRJpHTRkWV4XGgmamuVIR2sFxgwqeuls1TgAkahzuRnuwOl</string>
+    <!--Applovin Max end-->
+
+
+    <!--facebook login ids-->
+    <string name="facebook_app_id" translatable="false">1273581223355579</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb1273581223355579</string>
+    <string name="facebook_client_token" translatable="false">b658f5fbf9fd62f7818733cf9e6b7d73</string>
+    <!--facebook login ids end-->
+
+    <!--Spin coins-->
+    <string name="spin_coin_1" translatable="false">5</string>
+    <string name="spin_coin_2" translatable="false">7</string>
+    <string name="spin_coin_3" translatable="false">8</string>
+    <string name="spin_coin_4" translatable="false">10</string>
+    <string name="spin_coin_5" translatable="false">4</string>
+    <string name="spin_coin_6" translatable="false">5</string>
+    <string name="spin_coin_7" translatable="false">20</string>
+    <string name="spin_coin_8" translatable="false">1</string>
+    <string name="spin_coin_9" translatable="false">10</string>
+    <string name="spin_coin_10" translatable="false">6</string>
+    <!--Spin coins End-->
+
+    <!--App login methods, 'false' for Disable and 'true' for Enable-->
+    <bool name="Email">true</bool> <!--Email Login-->
+    <bool name="Facebook">true</bool> <!--Facebook Login-->
+    <bool name="Google">true</bool> <!--Google Login-->
+    <!--App login methods ends-->
+
+
+    <string name="video_limit_msg">Limit has been reached come again after sometime!!</string>
+
+    <string name="redeem_instruction_1">User can redeem directly simply choosing a any package.</string>
+    <string name="redeem_instruction_2">Your payment request will be sent to you within few hours thank you for using our app.</string>
+
+    <string name="error_data_loading">When loading data error has occurred. Check your network connection.</string>
+    <string name="msg_loading">Please wait...</string>
+    <string name="msg_account_blocked">This account is blocked by Admin.</string>
+    <string name="settings_file">setting</string>
+    <string name="settings_account_id">account_id</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

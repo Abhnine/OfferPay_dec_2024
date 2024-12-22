@@ -1,0 +1,1113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".csm.activity.DailyActivity">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_csm_daily_screen" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/arrow_back_2"
+                app:tint="@color/white" />
+
+            <RelativeLayout
+                android:id="@+id/bell_lay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+
+                <RelativeLayout
+                    android:id="@+id/coinbar_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:rotationY="180">
+
+                    <RelativeLayout
+                        android:id="@+id/coinbar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="22.10dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="-15dp"
+                        android:layout_toEndOf="@+id/img_coin"
+                        android:background="@drawable/csm_bg_coinsbar">
+
+                        <TextView
+                            android:id="@+id/coins"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="-2dp"
+                            android:layout_marginRight="22dp"
+                            android:fontFamily="@font/main_two"
+                            android:rotationY="-190"
+                            android:text="100"
+                            android:textColor="@color/white"
+                            android:textSize="12dp" />
+
+
+                    </RelativeLayout>
+
+
+                    <ImageView
+                        android:id="@+id/img_coin"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/csm_coin" />
+
+                    <ImageView
+                        android:id="@+id/img_coin_plus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="-15dp"
+                        android:layout_toEndOf="@+id/coinbar"
+                        android:src="@drawable/csm_coins_plus" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_toEndOf="@+id/coinbar_layout">
+
+                    <RelativeLayout
+                        android:id="@+id/coinbar_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="22.10dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="-17dp"
+                        android:layout_toEndOf="@+id/img_coin_1"
+                        android:background="@drawable/csm_bg_coinsbar"
+                        android:rotationY="180">
+
+                        <TextView
+                            android:id="@+id/diamond"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="22dp"
+                            android:layout_marginTop="-2dp"
+                            android:layout_marginRight="22dp"
+                            android:fontFamily="@font/main_two"
+                            android:rotationY="-180"
+                            android:text="100"
+                            android:textColor="@color/white"
+                            android:textSize="12dp" />
+
+
+                    </RelativeLayout>
+
+
+                    <ImageView
+                        android:id="@+id/img_coin_1"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_csm_diamond" />
+
+                    <ImageView
+                        android:id="@+id/img_coin_plus_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="-15dp"
+                        android:layout_toEndOf="@+id/coinbar_1"
+                        android:src="@drawable/ic_csm_diamond_plus" />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_csm_cal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/main_one"
+                android:text="Daily Streak"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="17dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="92dp"
+                android:layout_marginHorizontal="7dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="3dp"
+                    android:layout_weight="4"
+                    app:cardBackgroundColor="#5E4B97"
+                    app:cardCornerRadius="6dp">
+
+                    <RelativeLayout
+                        android:id="@+id/btn_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_csm_daily_bonus"
+                        android:clickable="false">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="7dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:fontFamily="@font/main_one"
+                                android:text="Monday"
+                                android:textColor="@color/white"
+                                android:textSize="20dp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    android:layout_marginTop="1dp"
+                                    android:src="@drawable/csm_coin" />
+
+                                <TextView
+                                    android:id="@+id/coin_1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="3dp"
+                                    android:fontFamily="@font/main_two"
+                                    android:text="100"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/white"
+                                    android:textSize="13dp" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/claim_1"
+                            android:layout_width="63dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="-2dp"
+                            android:layout_marginBottom="-6dp"
+                            android:background="@drawable/bg_csm_daily_claim_btn"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:id="@+id/txt_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="20dp"
+                                android:fontFamily="@font/main_one"
+                                android:text="CLAIM"
+                                android:textColor="@color/white"
+                                android:textSize="15dp" />
+
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/done_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:src="@drawable/bg_csm_claimed"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/lock_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:src="@drawable/bg_csm_csm_locked"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/miss_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:src="@drawable/bg_csm_missed"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/img_shine_1"
+                            android:layout_width="85dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="-85dp"
+                            android:src="@drawable/csm_btn_shin" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="3dp"
+                    android:layout_weight="4"
+                    app:cardBackgroundColor="#5E4B97"
+                    app:cardCornerRadius="6dp">
+
+                    <RelativeLayout
+                        android:id="@+id/btn_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_csm_daily_bonus"
+                        android:clickable="false">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="7dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:fontFamily="@font/main_one"
+                                android:text="Tuesday"
+                                android:textColor="@color/white"
+                                android:textSize="20dp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    android:layout_marginTop="1dp"
+                                    android:src="@drawable/csm_coin" />
+
+                                <TextView
+                                    android:id="@+id/coin_2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="3dp"
+                                    android:fontFamily="@font/main_two"
+                                    android:text="100"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/white"
+                                    android:textSize="13dp" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/claim_2"
+                            android:layout_width="63dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="-2dp"
+                            android:layout_marginBottom="-6dp"
+                            android:background="@drawable/bg_csm_daily_claim_btn"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="20dp"
+                                android:fontFamily="@font/main_one"
+                                android:text="CLAIM"
+                                android:textColor="@color/white"
+                                android:textSize="15dp" />
+
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/done_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:src="@drawable/bg_csm_claimed"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/lock_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:src="@drawable/bg_csm_csm_locked"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/miss_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:src="@drawable/bg_csm_missed"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/img_shine_2"
+                            android:layout_width="85dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="-85dp"
+                            android:src="@drawable/csm_btn_shin" />
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="3dp"
+                    android:layout_weight="4"
+                    app:cardBackgroundColor="#5E4B97"
+                    app:cardCornerRadius="6dp">
+
+                    <RelativeLayout
+                        android:id="@+id/btn_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_csm_daily_bonus"
+                        android:clickable="false">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="7dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:fontFamily="@font/main_one"
+                                android:gravity="center"
+                                android:text="Wed"
+                                android:textColor="@color/white"
+                                android:textSize="20dp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    android:layout_marginTop="1dp"
+                                    android:src="@drawable/csm_coin" />
+
+                                <TextView
+                                    android:id="@+id/coin_3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="3dp"
+                                    android:fontFamily="@font/main_two"
+                                    android:text="100"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/white"
+                                    android:textSize="13dp" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/claim_3"
+                            android:layout_width="63dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="-2dp"
+                            android:layout_marginBottom="-6dp"
+                            android:background="@drawable/bg_csm_daily_claim_btn"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="20dp"
+                                android:fontFamily="@font/main_one"
+                                android:text="CLAIM"
+                                android:textColor="@color/white"
+                                android:textSize="15dp" />
+
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/done_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:src="@drawable/bg_csm_claimed"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/lock_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:src="@drawable/bg_csm_csm_locked"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/miss_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:src="@drawable/bg_csm_missed"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/img_shine_3"
+                            android:layout_width="85dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="-85dp"
+                            android:src="@drawable/csm_btn_shin" />
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="3dp"
+                    android:layout_weight="4"
+                    app:cardBackgroundColor="#5E4B97"
+                    app:cardCornerRadius="6dp">
+
+                    <RelativeLayout
+                        android:id="@+id/btn_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_csm_daily_bonus"
+                        android:clickable="false">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="7dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:fontFamily="@font/main_one"
+                                android:text="Thursday"
+                                android:textColor="@color/white"
+                                android:textSize="20dp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    android:layout_marginTop="1dp"
+                                    android:src="@drawable/csm_coin" />
+
+                                <TextView
+                                    android:id="@+id/coin_4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="3dp"
+                                    android:fontFamily="@font/main_two"
+                                    android:text="100"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/white"
+                                    android:textSize="13dp" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/claim_4"
+                            android:layout_width="63dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="-2dp"
+                            android:layout_marginBottom="-6dp"
+                            android:background="@drawable/bg_csm_daily_claim_btn"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="20dp"
+                                android:fontFamily="@font/main_one"
+                                android:text="CLAIM"
+                                android:textColor="@color/white"
+                                android:textSize="15dp" />
+
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/done_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:src="@drawable/bg_csm_claimed"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/lock_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:src="@drawable/bg_csm_csm_locked"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/miss_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:src="@drawable/bg_csm_missed"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/img_shine_4"
+                            android:layout_width="85dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="-85dp"
+                            android:src="@drawable/csm_btn_shin" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="92dp"
+                android:layout_marginHorizontal="7dp"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="3dp"
+                    android:layout_weight="4"
+                    app:cardBackgroundColor="#5E4B97"
+                    app:cardCornerRadius="6dp">
+
+                    <RelativeLayout
+                        android:id="@+id/btn_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_csm_daily_bonus"
+                        android:clickable="false">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="7dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:fontFamily="@font/main_one"
+                                android:text="Friday"
+                                android:textColor="@color/white"
+                                android:textSize="20dp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    android:layout_marginTop="1dp"
+                                    android:src="@drawable/csm_coin" />
+
+                                <TextView
+                                    android:id="@+id/coin_5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="3dp"
+                                    android:fontFamily="@font/main_two"
+                                    android:text="100"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/white"
+                                    android:textSize="13dp" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/claim_5"
+                            android:layout_width="63dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="-2dp"
+                            android:layout_marginBottom="-6dp"
+                            android:background="@drawable/bg_csm_daily_claim_btn"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="20dp"
+                                android:fontFamily="@font/main_one"
+                                android:text="CLAIM"
+                                android:textColor="@color/white"
+                                android:textSize="15dp" />
+
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/done_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:src="@drawable/bg_csm_claimed"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/lock_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:src="@drawable/bg_csm_csm_locked"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/miss_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:src="@drawable/bg_csm_missed"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/img_shine_5"
+                            android:layout_width="85dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="-85dp"
+                            android:src="@drawable/csm_btn_shin" />
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="3dp"
+                    android:layout_weight="4"
+                    app:cardBackgroundColor="#5E4B97"
+                    app:cardCornerRadius="6dp">
+
+                    <RelativeLayout
+                        android:id="@+id/btn_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_csm_daily_bonus"
+                        android:clickable="false">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="7dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:fontFamily="@font/main_one"
+                                android:text="Saturday"
+                                android:textColor="@color/white"
+                                android:textSize="20dp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    android:layout_marginTop="1dp"
+                                    android:src="@drawable/csm_coin" />
+
+                                <TextView
+                                    android:id="@+id/coin_6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="3dp"
+                                    android:fontFamily="@font/main_two"
+                                    android:text="100"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/white"
+                                    android:textSize="13dp" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/claim_6"
+                            android:layout_width="63dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="-2dp"
+                            android:layout_marginBottom="-6dp"
+                            android:background="@drawable/bg_csm_daily_claim_btn"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="20dp"
+                                android:fontFamily="@font/main_one"
+                                android:text="CLAIM"
+                                android:textColor="@color/white"
+                                android:textSize="15dp" />
+
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/done_6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:src="@drawable/bg_csm_claimed"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/lock_6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:src="@drawable/bg_csm_csm_locked"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/miss_6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:src="@drawable/bg_csm_missed"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/img_shine_6"
+                            android:layout_width="85dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="-85dp"
+                            android:src="@drawable/csm_btn_shin" />
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="3dp"
+                    android:layout_weight="8.2"
+                    app:cardBackgroundColor="#5E4B97"
+                    app:cardCornerRadius="6dp">
+
+                    <RelativeLayout
+                        android:id="@+id/btn_7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_csm_daily_bonus"
+                        android:clickable="false">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="-10dp"
+                            android:layout_marginRight="-35dp"
+                            android:layout_marginBottom="-10dp"
+                            android:src="@drawable/bg_csm_daily_claim" />
+
+
+                        <ImageView
+                            android:layout_width="95dp"
+                            android:layout_height="93dp"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/img_csm_daily" />
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="8dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:fontFamily="@font/main_one"
+                                android:text="Sunday"
+                                android:textColor="@color/white"
+                                android:textSize="20dp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="0dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    android:layout_marginTop="1dp"
+                                    android:src="@drawable/csm_coin" />
+
+                                <TextView
+                                    android:id="@+id/coin_7"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="3dp"
+                                    android:fontFamily="@font/main_two"
+                                    android:text="100"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/white"
+                                    android:textSize="13dp" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/claim_7"
+                            android:layout_width="63dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="-2dp"
+                            android:layout_marginBottom="-6dp"
+                            android:background="@drawable/bg_csm_daily_claim_btn"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="20dp"
+                                android:fontFamily="@font/main_one"
+                                android:text="CLAIM"
+                                android:textColor="@color/white"
+                                android:textSize="15dp" />
+
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/done_7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:src="@drawable/bg_csm_claimed"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/lock_7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:src="@drawable/bg_csm_csm_locked"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/miss_7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:src="@drawable/bg_csm_missed"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/img_shine_7"
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="-150dp"
+                            android:src="@drawable/csm_btn_shin" />
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_csm_cal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:fontFamily="@font/main_one"
+                android:text="Task &amp; missions"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:paddingBottom="100dp"
+                android:id="@+id/loading"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:padding="100dp"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:scaleType="centerCrop"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/loading"/>
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_marginBottom="50dp"
+                    android:layout_marginTop="50dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Players not founsxczd!!"
+                    android:textColor="#CEFFFFFF"
+                    android:id="@+id/error_text"/>
+
+
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/list"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

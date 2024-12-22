@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    tools:context=".csm.activity.RewardActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="207dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/img_csm_dark_back"
+                android:scaleType="centerCrop"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/bg_csm_stars"
+                android:scaleType="centerCrop"/>
+            
+
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp">
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/arrow_back_2"
+                    app:tint="@color/white" />
+
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="18dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/main_one"
+                    android:text="Redeem Packages"
+                    android:textColor="@color/white"
+                    android:textSize="25dp" />
+
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_marginBottom="-2dp"
+            android:layout_marginLeft="-2dp"
+            android:layout_marginRight="-2dp"
+            android:background="@drawable/bg_csm_top_stroke"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/banner_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="170dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            app:cardCornerRadius="6dp"
+            app:cardBackgroundColor="@color/colorPrimaryDark">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_csm_home_btn">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/btn_csm_history"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="-15dp"
+                    android:layout_marginTop="-12dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HISTORY"
+                    android:fontFamily="@font/main_one"
+                    android:textSize="14dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/white"/>
+
+                <LinearLayout
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="BALANCE"
+                        android:fontFamily="@font/main_one"
+                        android:textSize="20dp"
+                        android:textColor="@color/white"/>
+
+                    <LinearLayout
+                        android:layout_marginTop="1dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/rupee"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/csm_coin" />
+
+                        <TextView
+                            android:id="@+id/points"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginTop="-1dp"
+                            android:fontFamily="@font/main_two"
+                            android:text="1000 coins need!"
+                            android:textColor="#F6F3FF"
+                            android:textSize="12sp" />
+
+
+                    </LinearLayout>
+                    <ProgressBar
+                        android:layout_marginRight="25dp"
+                        android:id="@+id/progressBar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="6dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="6dp"
+                        android:max="500"
+                        android:progress="400"
+                        android:progressDrawable="@drawable/progress_csm_golden" />
+
+
+                </LinearLayout>
+
+
+
+
+            </RelativeLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+
+            <RelativeLayout
+                android:id="@+id/lin_game_c"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="4dp"
+                    android:paddingBottom="5dp" />
+            </RelativeLayout>
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingHorizontal="15dp"
+            android:paddingTop="10dp"
+            android:background="@drawable/bg_csm_top_round"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:src="@drawable/ic_csm_help" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:textAllCaps="true"
+                        android:fontFamily="@font/main_one"
+                        android:text="important instructions!"
+                        android:textColor="#FBB216"
+                        android:textSize="19sp" />
+
+
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:paddingVertical="6dp"
+                android:paddingHorizontal="10dp"
+                android:background="@drawable/bg_csm_steps"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="12dp"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/main_two"
+                    android:textColor="#FBB216"
+                    android:layout_height="wrap_content"
+                    android:text="1. "/>
+
+                <TextView
+                    android:textSize="12dp"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/main_two"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    android:text="@string/redeem_instruction_1"/>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingVertical="6dp"
+                android:paddingHorizontal="10dp"
+                android:background="@drawable/bg_csm_steps"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="12dp"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/main_two"
+                    android:textColor="#FBB216"
+                    android:layout_height="wrap_content"
+                    android:text="2. "/>
+
+                <TextView
+                    android:textSize="12dp"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/main_two"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    android:text="@string/redeem_instruction_2"/>
+
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="62dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="5dp"
+    app:cardCornerRadius="6dp"
+    app:cardBackgroundColor="#5A4597"
+    android:layout_marginHorizontal="10dp"
+    android:paddingVertical="0dp">
+
+    <RelativeLayout
+        android:background="@drawable/btn_csm_home_btn_2nd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/icon"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:src="@drawable/csm_coin"
+            android:layout_centerVertical="true"/>
+
+        <LinearLayout
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/icon"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Spin &amp; win Reward"
+                android:fontFamily="@font/main_one"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20-5-2002"
+                android:fontFamily="@font/main_two"
+                android:textColor="@color/white"
+                android:textSize="10sp"/>
+
+        </LinearLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="-50dp">
+
+            <ImageView
+                android:layout_marginBottom="-20dp"
+                android:layout_marginTop="-20dp"
+                android:layout_width="119dp"
+                android:layout_height="119dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bg_csm_ovel_14" />
+
+            <LinearLayout
+                android:layout_marginStart="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical">
+
+
+                <TextView
+                    android:id="@+id/type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-1dp"
+                    android:layout_marginRight="5dp"
+                    android:fontFamily="@font/main_one"
+                    android:text="+"
+                    android:textColor="@color/green_500"
+                    android:textSize="16dp" />
+
+
+                <TextView
+                    android:id="@+id/amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-1dp"
+                    android:layout_marginRight="5dp"
+                    android:fontFamily="@font/main_one"
+                    android:text="1000"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

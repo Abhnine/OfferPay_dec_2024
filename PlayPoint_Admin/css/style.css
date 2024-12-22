@@ -1,0 +1,62 @@
+.nav-cut{
+    position: absolute;
+    z-index: 99;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-right: 8px;
+    margin-top: 6px;
+}
+.navp{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+.one80d{
+    rotate: 180deg;
+    transform: rotateY(180deg);
+}
+.nav-cut button{
+    background: white;
+    border-radius: 7px;
+    padding: 2px;
+    height: 32px;
+    width: 32px;
+}
+.nav-cut button:hover{
+    background: white;
+}
+.pobkin{
+    background: none;
+    width: 100%;
+    height: 30px;
+    margin-right: 16px;
+}
+.shadow-0{
+    box-shadow: none !important;
+}
+.dsbk{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 92%;
+}
+.dsbk1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.upk{
+    border-radius: 14px;
+}
+.f17{
+    font-size: 16px;
+}
+.text-g{
+    color: #64748b;
+}
+.sess_msg {
+    margin-bottom: 15px;
+    padding: 13px;
+}

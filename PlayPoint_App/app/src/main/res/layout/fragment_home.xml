@@ -1,0 +1,1185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    tools:context=".csm.fragment.HomeFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp">
+
+        <RelativeLayout
+            android:id="@+id/pro_layout"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:background="@drawable/bg_csm_ovel_dark" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/pro"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_margin="7dp"
+                android:src="@mipmap/ic_launcher" />
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:indeterminate="false"
+                android:progress="75"
+                android:progressDrawable="@drawable/circular_progress_bar"
+                android:rotation="110"
+                android:textAlignment="center" />
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/pro_layout"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/bell_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/coinbar_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/coinbar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="22.10dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="-15dp"
+                        android:layout_toEndOf="@+id/img_coin"
+                        android:background="@drawable/csm_bg_coinsbar">
+
+                        <TextView
+                            android:id="@+id/coins"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="-2dp"
+                            android:layout_marginRight="22dp"
+                            android:fontFamily="@font/main_two"
+                            android:text="15020"
+                            android:textColor="@color/white"
+                            android:textSize="12dp" />
+
+
+                    </RelativeLayout>
+
+
+                    <ImageView
+                        android:id="@+id/img_coin"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/csm_coin" />
+
+                    <ImageView
+                        android:id="@+id/img_coin_plus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="-15dp"
+                        android:layout_toEndOf="@+id/coinbar"
+                        android:src="@drawable/csm_coins_plus" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toEndOf="@+id/coinbar_layout">
+
+                    <RelativeLayout
+                        android:id="@+id/coinbar_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="22.10dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="-17dp"
+                        android:layout_toEndOf="@+id/img_coin_1"
+                        android:background="@drawable/csm_bg_coinsbar">
+
+                        <TextView
+                            android:id="@+id/diamond"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="19dp"
+                            android:layout_marginTop="-2dp"
+                            android:layout_marginRight="22dp"
+                            android:fontFamily="@font/main_two"
+                            android:text="15020"
+                            android:textColor="@color/white"
+                            android:textSize="12dp" />
+
+
+                    </RelativeLayout>
+
+
+                    <ImageView
+                        android:id="@+id/img_coin_1"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_csm_diamond" />
+
+                    <ImageView
+                        android:id="@+id/img_coin_plus_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="-15dp"
+                        android:layout_toEndOf="@+id/coinbar_1"
+                        android:src="@drawable/ic_csm_diamond_plus" />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/main_two"
+                    android:text="CSMARKET"
+                    android:textColor="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="13dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/bg_csm_level"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/level"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="4dp"
+                        android:layout_marginTop="-1dp"
+                        android:fontFamily="@font/main_two"
+                        android:text="Lv.1"
+                        android:textColor="@color/white"
+                        android:textSize="8dp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/noti"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp">
+
+            <ImageView
+                android:layout_width="31dp"
+                android:layout_height="31dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_csm_bell" />
+
+            <LinearLayout
+                android:id="@+id/b_bg"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginLeft="12.5dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_notification_count"
+                android:visibility="invisible">
+
+                <TextView
+                    android:id="@+id/badge"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/main_two"
+                    android:gravity="center"
+                    android:text="5"
+                    android:textColor="@color/white"
+                    android:textSize="7.5sp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="40dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.viewpager2.widget.ViewPager2
+                        android:id="@+id/viewPagerImageSlider"
+                        android:layout_width="match_parent"
+                        android:layout_height="69dp"
+                        android:layout_marginBottom="6dp"
+                        android:scrollIndicators="bottom" />
+
+                    <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+                        android:id="@+id/worm_dots_indicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="2dp"
+                        android:layout_marginBottom="10dp"
+                        app:dotsColor="#77745CBC"
+                        app:dotsCornerRadius="5dp"
+                        app:dotsSize="10dp"
+                        app:dotsSpacing="2dp"
+                        app:dotsWidthFactor="2"
+                        app:progressMode="true"
+                        app:selectedDotColor="#A1FFFFFF" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/spin"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        app:cardBackgroundColor="#5E4B97"
+                        app:cardCornerRadius="6dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/btn_csm_home_3rd">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentEnd="true">
+
+                                <ImageView
+                                    android:id="@+id/img_spin"
+                                    android:layout_width="75dp"
+                                    android:layout_height="75dp"
+                                    android:layout_marginTop="14dp"
+                                    android:layout_marginRight="-22dp"
+                                    android:src="@drawable/img_csm_spinner" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="7dp"
+                                android:layout_marginTop="7dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/main_one"
+                                    android:text="Spin Wheel"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/white"
+                                    android:textSize="18dp" />
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/main_two"
+                                    android:text="Spin &amp; earn"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/white"
+                                    android:textSize="8.5dp" />
+
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:layout_width="63dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginLeft="-8dp"
+                                android:layout_marginBottom="-12dp"
+                                android:background="@drawable/bg_csm_open_btn">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginTop="6dp"
+                                    android:layout_marginRight="12dp"
+                                    android:fontFamily="@font/main_one"
+                                    android:text="SPIN NOW"
+                                    android:textColor="@color/white"
+                                    android:textSize="10dp" />
+
+                            </RelativeLayout>
+
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1.6"
+                        app:cardBackgroundColor="#5E4B97"
+                        app:cardCornerRadius="6dp">
+
+                        <RelativeLayout
+                            android:id="@+id/games"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/btn_csm_home_3rd">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginRight="-10dp">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/bg_csm_game_btn" />
+
+                                <ImageView
+                                    android:layout_width="65dp"
+                                    android:layout_height="65dp"
+                                    android:layout_centerInParent="true"
+                                    android:src="@drawable/ic_csm_controller" />
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="7dp"
+                                android:layout_marginTop="7dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/main_one"
+                                    android:text="Play Games"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/white"
+                                    android:textSize="18dp" />
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/main_two"
+                                    android:text="Play html5 games &amp; earn"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/white"
+                                    android:textSize="8dp" />
+
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:layout_width="63dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginLeft="-8dp"
+                                android:layout_marginBottom="-12dp"
+                                android:background="@drawable/bg_csm_open_btn">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginTop="6dp"
+                                    android:layout_marginRight="12dp"
+                                    android:fontFamily="@font/main_one"
+                                    android:text="PLAY NOW"
+                                    android:textColor="@color/white"
+                                    android:textSize="10dp" />
+
+                            </RelativeLayout>
+
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        app:cardBackgroundColor="#5E4B97"
+                        app:cardCornerRadius="6dp">
+
+                        <RelativeLayout
+                            android:id="@+id/scratch"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/btn_csm_home_3rd">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentEnd="true">
+
+                                <ImageView
+                                    android:layout_width="63.5dp"
+                                    android:layout_height="72dp"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_marginRight="-19dp"
+                                    android:src="@drawable/img_csm_scratch" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="7dp"
+                                android:layout_marginTop="7dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/main_one"
+                                    android:text="scratch"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/white"
+                                    android:textSize="18dp" />
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/main_two"
+                                    android:text="scratch &amp; earn"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/white"
+                                    android:textSize="8.5dp" />
+
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:layout_width="63dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginLeft="-8dp"
+                                android:layout_marginBottom="-12dp"
+                                android:background="@drawable/bg_csm_open_btn_green">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginTop="6dp"
+                                    android:layout_marginRight="10.5dp"
+                                    android:fontFamily="@font/main_one"
+                                    android:text="OPEN NOW"
+                                    android:textColor="@color/white"
+                                    android:textSize="10dp" />
+
+                            </RelativeLayout>
+
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1.6"
+                        app:cardCornerRadius="6dp">
+
+                        <RelativeLayout
+                            android:id="@+id/offers"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/bg_csm_home_golden_btn">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginRight="-8dp">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/bg_csm_gift" />
+
+                                <ImageView
+                                    android:layout_width="87dp"
+                                    android:layout_height="60dp"
+                                    android:layout_centerInParent="true"
+                                    android:src="@drawable/img_csm_gift" />
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="7dp"
+                                android:layout_marginTop="7dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/main_one"
+                                    android:text="Offerwalls"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/white"
+                                    android:textSize="18dp" />
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/main_two"
+                                    android:text="earn coins BY offers"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/white"
+                                    android:textSize="8dp" />
+
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:layout_width="63dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginLeft="-8dp"
+                                android:layout_marginBottom="-12dp"
+                                android:background="@drawable/bg_csm_open_btn">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginTop="7dp"
+                                    android:layout_marginRight="12dp"
+                                    android:fontFamily="@font/main_one"
+                                    android:text="OPEN NOW"
+                                    android:textColor="@color/white"
+                                    android:textSize="10dp" />
+
+                            </RelativeLayout>
+
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1.6"
+                    app:cardBackgroundColor="#5E4B97"
+                    app:cardCornerRadius="6dp">
+
+                    <RelativeLayout
+                        android:id="@+id/referTask"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/btn_csm_home_3rd">
+
+
+                        <ImageView
+                            android:id="@+id/gift"
+                            android:layout_width="87dp"
+                            android:layout_height="60dp"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/img_csm_trophy" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_toEndOf="@id/gift"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/main_one"
+                                android:text="Refer &amp; earn missions"
+                                android:textAllCaps="true"
+                                android:textColor="@color/white"
+                                android:textSize="20dp" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:fontFamily="@font/main_two"
+                                android:text="Advance refer system share &amp; earn"
+                                android:textAllCaps="true"
+                                android:textColor="@color/white"
+                                android:textSize="8.5dp" />
+
+                        </LinearLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="-30dp">
+
+                            <ImageView
+                                android:layout_width="119dp"
+                                android:layout_height="119dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/bg_csm_enter_back" />
+
+                            <ImageView
+                                android:layout_width="29dp"
+                                android:layout_height="29dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/ic_csm_enter_refer" />
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="112dp"
+                            android:layout_height="112dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="-24dp"
+                            android:layout_marginTop="-20dp"
+                            android:layout_marginBottom="-20dp"
+                            android:background="@drawable/bg_csm_ovel_10" />
+
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/offers_body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#1A0F39" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/csm_coin" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:fontFamily="@font/main_one"
+                            android:text="Trending offers"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white"
+                            android:textSize="13dp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fillViewport="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:visibility="visible">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/list_offers"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingBottom="5dp"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/see_all_offers"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/btn_csm_see_all"
+                            android:orientation="vertical"
+                            android:visibility="gone" />
+
+                        <com.facebook.shimmer.ShimmerFrameLayout
+                            android:id="@+id/skeletonLayout2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            app:shimmer_duration="1500">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingBottom="5dp">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="220dp"
+                                    android:layout_height="75dp"
+                                    android:layout_marginLeft="10dp"
+                                    app:cardBackgroundColor="#5E4B97"
+                                    app:cardCornerRadius="8dp" />
+
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="220dp"
+                                    android:layout_height="75dp"
+                                    android:layout_marginLeft="10dp"
+                                    app:cardBackgroundColor="#5E4B97"
+                                    app:cardCornerRadius="8dp" />
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="220dp"
+                                    android:layout_height="75dp"
+                                    android:layout_marginLeft="10dp"
+                                    app:cardBackgroundColor="#5E4B97"
+                                    app:cardCornerRadius="8dp" />
+                            </LinearLayout>
+
+
+                        </com.facebook.shimmer.ShimmerFrameLayout>
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#1A0F39" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="2"
+                    app:cardBackgroundColor="#5E4B97"
+                    app:cardCornerRadius="6dp">
+
+                    <RelativeLayout
+                        android:id="@+id/visit"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/btn_csm_home_btn_2nd">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="72dp"
+                                android:layout_height="78dp"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/img_csm_visit" />
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="-7dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/main_one"
+                                    android:text="Visit &amp; earn"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/white"
+                                    android:textSize="18dp" />
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/main_two"
+                                    android:text="visit &amp; earn coins"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/white"
+                                    android:textSize="7.5dp" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginRight="-8dp"
+                            android:layout_marginBottom="-10dp"
+                            android:background="@drawable/bg_csm_visit_shape">
+
+                            <RelativeLayout
+                                android:id="@+id/coinbar_layout"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="48dp"
+                                android:layout_marginTop="27dp">
+
+
+                                <RelativeLayout
+                                    android:id="@+id/coinbar_2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="12dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginRight="-10dp"
+                                    android:background="@drawable/csm_bg_coinsbar">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="8dp"
+                                        android:layout_marginTop="-1dp"
+                                        android:layout_marginRight="13dp"
+                                        android:fontFamily="@font/main_two"
+                                        android:text="200"
+                                        android:textColor="@color/white"
+                                        android:textSize="7dp" />
+
+
+                                </RelativeLayout>
+
+                                <ImageView
+                                    android:layout_width="13dp"
+                                    android:layout_height="13dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginEnd="0dp"
+                                    android:layout_toEndOf="@+id/coinbar_2"
+                                    android:src="@drawable/csm_coin" />
+
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="2"
+                    app:cardBackgroundColor="#5E4B97"
+                    app:cardCornerRadius="6dp">
+
+                    <RelativeLayout
+                        android:id="@+id/videos"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/btn_csm_home_btn_2nd">
+
+                        <LinearLayout
+                            android:layout_width="115dp"
+                            android:layout_height="124dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="-12dp"
+                            android:layout_marginRight="-30dp"
+                            android:layout_marginBottom="-40dp"
+                            android:background="@drawable/bg_csm_ovel_14"
+                            android:scaleType="centerCrop" />
+
+
+                        <ImageView
+                            android:layout_width="84dp"
+                            android:layout_height="65dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginRight="-12dp"
+                            android:src="@drawable/img_csm_videos" />
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginTop="7dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/main_one"
+                                android:text="Watch video"
+                                android:textAllCaps="true"
+                                android:textColor="@color/white"
+                                android:textSize="18dp" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/main_two"
+                                android:text="Spin &amp; earn coins"
+                                android:textAllCaps="true"
+                                android:textColor="@color/white"
+                                android:textSize="7.5dp" />
+
+                        </LinearLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="63dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="-4dp"
+                            android:layout_marginBottom="-12dp"
+                            android:background="@drawable/bg_csm_open_btn">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginTop="7dp"
+                                android:layout_marginRight="14dp"
+                                android:fontFamily="@font/main_one"
+                                android:text="SPIN NOW"
+                                android:textColor="@color/white"
+                                android:textSize="10dp" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="10dp"
+                android:background="#1A0F39" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:src="@drawable/ic_csm_game"
+                        app:tint="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="@font/main_one"
+                        android:text="Games"
+                        android:textColor="@color/white"
+                        android:textSize="17sp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/all_games"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:background="?selectableItemBackground"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="2dp"
+                        android:fontFamily="@font/main_one"
+                        android:text="See All"
+                        android:textColor="@color/white"
+                        android:textSize="14dp" />
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/ic_csm_enter_small"
+                        app:tint="@color/white" />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fillViewport="true">
+
+                <RelativeLayout
+                    android:id="@+id/lin_game_c"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/list"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp" />
+                </RelativeLayout>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

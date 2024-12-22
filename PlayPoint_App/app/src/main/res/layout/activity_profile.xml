@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".csm.activity.Profile">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_csm_dark_back"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bg_csm_profile_shape"
+        android:layout_marginTop="115dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_marginTop="35dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/close"
+                app:tint="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/main_one"
+                android:text="Account Profile"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/logo"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/logoo"
+                    app:riv_corner_radius="20dp"
+                    app:riv_border_color="@color/white"
+                    app:riv_border_width="2dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="35dp"/>
+
+                <ImageView
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:src="@drawable/ic_csm_take_photo"
+                    android:layout_below="@+id/logo"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="-55dp"/>
+
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_csm_profile_edit"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="10dp"
+                android:background="#25184E"
+                android:layout_width="match_parent"
+                android:layout_height="57dp">
+
+                <LinearLayout
+                    android:paddingBottom="1dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_marginLeft="7dp"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/ic_csm_pro_person"/>
+
+                    <LinearLayout
+                        android:layout_marginLeft="9dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_marginTop="5dp"
+                            android:textSize="12dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Your account name"
+                            android:fontFamily="@font/main_two"
+                            android:textColor="#9AFFFFFF"/>
+
+                        <EditText
+                            android:id="@+id/ed_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:fontFamily="@font/main_two"
+                            android:textColor="@color/white"
+                            android:hint="Name"
+                            android:textColorHint="#9AFFFFFF"
+                            android:layout_marginTop="-10dp"
+                            android:text="CSM USER"
+                            android:textSize="15dp" />
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#EFBB35"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="10dp"
+                android:background="#25184E"
+                android:layout_width="match_parent"
+                android:layout_height="57dp">
+
+                <LinearLayout
+                    android:paddingBottom="1dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_marginLeft="7dp"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/ic_csm_pro_person"/>
+
+                    <LinearLayout
+                        android:layout_marginLeft="9dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_marginTop="5dp"
+                            android:textSize="12dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Your account name"
+                            android:fontFamily="@font/main_two"
+                            android:textColor="#9AFFFFFF"/>
+
+                        <EditText
+                            android:enabled="false"
+                            android:id="@+id/ed_username"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:fontFamily="@font/main_two"
+                            android:textColor="@color/white"
+                            android:hint="Name"
+                            android:textColorHint="#9AFFFFFF"
+                            android:layout_marginTop="-10dp"
+                            android:text="CSM USER"
+                            android:textSize="15dp"
+                            android:textAllCaps="true"/>
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#EFBB35"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="10dp"
+                android:background="#25184E"
+                android:layout_width="match_parent"
+                android:layout_height="57dp">
+
+                <LinearLayout
+                    android:paddingBottom="1dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_marginLeft="7dp"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/ic_csm_pro_email"/>
+
+                    <LinearLayout
+                        android:layout_marginLeft="9dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_marginTop="5dp"
+                            android:textSize="12dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Your email"
+                            android:fontFamily="@font/main_two"
+                            android:textColor="#9AFFFFFF"/>
+
+                        <EditText
+                            android:enabled="false"
+                            android:id="@+id/ed_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:fontFamily="@font/main_two"
+                            android:textColor="@color/white"
+                            android:hint="Name"
+                            android:textColorHint="#9AFFFFFF"
+                            android:layout_marginTop="-10dp"
+                            android:text="CSM USER"
+                            android:textSize="15dp"
+                            android:textAllCaps="true"/>
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#EFBB35"/>
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_marginHorizontal="12dp"
+                android:id="@+id/update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_csm_update"
+                android:layout_marginTop="150dp"
+                android:layout_marginBottom="12dp"/>
+
+            <LinearLayout
+                android:layout_marginHorizontal="12dp"
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_csm_delete"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="12dp"
+                android:orientation="horizontal" />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

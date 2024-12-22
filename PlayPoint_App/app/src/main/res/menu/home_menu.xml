@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:iconTint="@color/white"
+        android:id="@+id/home"
+        android:icon="@drawable/ic_csm_home"
+        android:title="Home" />
+
+    <item
+        android:iconTint="@color/white"
+        android:id="@+id/refer"
+        android:icon="@drawable/ic_csm_refer"
+        android:title="Referral"
+       />
+
+    <item
+        android:iconTint="@color/white"
+        android:id="@+id/leader"
+        android:icon="@drawable/ic_csm_leader"
+        android:title="Leaderboard"
+       />
+    <item
+        android:iconTint="@color/white"
+        android:id="@+id/redeem"
+        android:icon="@drawable/ic_csm_reward"
+        android:title="Redeem"
+        />
+    <item
+        android:iconTint="@color/white"
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_csm_profile"
+        android:title="Profile" />
+</menu>

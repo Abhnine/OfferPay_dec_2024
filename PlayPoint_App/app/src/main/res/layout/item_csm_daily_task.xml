@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="62dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="#5E4B97"
+    android:layout_marginTop="10dp"
+    android:layout_marginHorizontal="10dp"
+    app:cardCornerRadius="6dp">
+
+    <RelativeLayout
+        android:id="@+id/click"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_csm_home_btn_long">
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:id="@+id/gift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/ic_csm_day_3" >
+
+
+            <TextView
+                android:id="@+id/days"
+                android:paddingTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--"
+                android:fontFamily="@font/main_one"
+                android:textSize="20dp"
+                android:textColor="#4D3410"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_toEndOf="@id/gift"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/main_one"
+                android:text="Sign in for 3 days"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+
+            <TextView
+                android:id="@+id/desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/main_two"
+                android:text="earn additional points from daily sign in"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="7dp" />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:id="@+id/img_status"
+                android:layout_marginRight="-48dp"
+                android:layout_marginTop="-45dp"
+                android:layout_marginBottom="-25sp"
+                android:layout_width="124dp"
+                android:layout_height="119dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bg_csm_ovel_14" />
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/img_status_claim"
+                android:layout_marginRight="-48dp"
+                android:layout_marginTop="-45dp"
+                android:layout_marginBottom="-25sp"
+                android:layout_width="124dp"
+                android:layout_height="119dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ovel_csm_green" />
+
+
+
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:layout_marginRight="-5dp"
+            android:layout_alignParentRight="true">
+
+            <RelativeLayout
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="11dp"
+                android:id="@+id/coinbar"
+                android:visibility="visible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="19dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="-15dp"
+                    android:layout_toEndOf="@+id/img_coinn"
+                    android:background="@drawable/bg_csm_game_coinbar">
+
+                    <TextView
+                        android:id="@+id/coins"
+                        android:layout_marginTop="-6dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="7dp"
+                        android:fontFamily="@font/main_two"
+                        android:text="500"
+                        android:textColor="@color/white"
+                        android:textSize="11dp" />
+
+
+                </RelativeLayout>
+
+
+                <ImageView
+                    android:id="@+id/img_coinn"
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/csm_coin" />
+
+
+            </RelativeLayout>
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/status"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_csm_done"/>
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/days_left"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/main_one"
+                android:gravity="center"
+                android:text="0/3"
+                android:textColor="@color/white"
+                android:textSize="19dp" />
+
+            <ImageView
+                android:id="@+id/done"
+                android:layout_width="15.5dp"
+                android:layout_height="19dp"
+                android:src="@drawable/ic_csm_done"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

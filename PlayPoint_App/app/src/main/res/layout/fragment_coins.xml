@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CC1D1241"
+    tools:context=".csm.DialogFrag.Coins">
+
+    <RelativeLayout
+        android:id="@+id/dialog"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bg_csm_reward_back_normal"/>
+        
+        <ImageView
+            android:id="@+id/top"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_csm_trophy"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="28dp"/>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/below"
+            android:layout_marginTop="105dp"
+            android:layout_below="@id/top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/top"
+                android:fontFamily="@font/main_one"
+                android:textSize="22dp"
+                android:textColor="@color/white"
+                android:text="You Got" />
+
+
+            <ImageView
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:src="@drawable/csm_coin"
+                android:layout_marginHorizontal="6dp"/>
+
+            <TextView
+                android:id="@+id/coins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/top"
+                android:fontFamily="@font/main_one"
+                android:textSize="22dp"
+                android:textColor="#FCD40D"
+                android:text="100 Coins" />
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/x2"
+            android:layout_width="280dp"
+            android:layout_height="44dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/below"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal" />
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:background="@drawable/btn_csm_xp"
+            android:visibility="gone"
+            android:id="@+id/btn_xp"
+            android:layout_width="280dp"
+            android:layout_height="44dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/below"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YOU GOT"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:fontFamily="@font/main_one"/>
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/ic_csm_xp"
+                android:layout_marginHorizontal="5dp"/>
+
+            <TextView
+                android:id="@+id/xp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="500XP +"
+                android:textColor="#C6F128"
+                android:textSize="20dp"
+                android:fontFamily="@font/main_one"/>
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/close"
+        android:background="?selectableItemBackground"
+        android:padding="7dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/dialog"
+        android:src="@drawable/ic_csm_close_dialog"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"/>
+
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/csm_back"
+        android:background="?selectableItemBackground"
+        android:padding="7dp"
+        android:layout_width="50dp"
+        android:layout_centerVertical="true"
+        android:layout_height="50dp"
+        android:layout_toEndOf="@id/dialog"
+        android:layout_marginLeft="25dp"
+        android:src="@drawable/ic_csm_close_dialog"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/click"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="10dp"
+    android:background="@drawable/bg_csm_slider">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/img"
+        android:layout_width="70dp"
+        android:layout_height="67dp"
+        android:layout_centerVertical="true"
+        android:layout_marginVertical="1dp"
+        android:layout_marginLeft="1dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher"
+        app:riv_corner_radius_bottom_left="17dp"
+        app:riv_corner_radius_top_left="17dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toStartOf="@+id/right"
+        android:layout_toEndOf="@+id/img"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+
+        <TextView
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/main_one"
+            android:text="codesellmarket app banners"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="19dp"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="19dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_csm_txt_slider"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="5dp">
+
+            <TextView
+                android:id="@+id/sub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom=".8dp"
+                android:fontFamily="@font/main_two"
+                android:text="Lorem Ipsum is simply dummy text of the printing and ipsum is simply dummy text"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="10dp"
+
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:singleLine="true"
+                android:scrollHorizontally="true"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit ="marquee_forever"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:src="@drawable/bg_csm_slider_go_btn"
+        app:riv_corner_radius_bottom_right="17dp"
+        app:riv_corner_radius_top_right="17dp" />
+
+
+</RelativeLayout>

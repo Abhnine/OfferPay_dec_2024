@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:layout_height="match_parent">
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:background="@drawable/bg_csm_screen"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:background="@drawable/bg_csm_welcome_screen"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_csm_welcome_round_shape"
+        android:layout_marginTop="75dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="153dp"
+            android:layout_height="133dp"
+            android:src="@drawable/img_csm_gift"
+            android:layout_marginTop="-5dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+
+        <TextView
+            android:layout_marginTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Refer &amp; earn"
+            android:textSize="44dp"
+            android:textAllCaps="true"
+            android:fontFamily="@font/main_one"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_marginHorizontal="15dp"
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="best way to earn more coins from advance referral"
+            android:textSize="14dp"
+            android:textAllCaps="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/main_two"
+            android:textColor="@color/white" />
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

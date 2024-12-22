@@ -1,0 +1,137 @@
+package com.onechampion;
+
+import android.app.ProgressDialog;
+import android.content.Intent;
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
+import android.view.GestureDetector;
+import android.view.LayoutInflater;
+import android.view.MotionEvent;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
+
+import com.android.volley.Request;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.onechampion.Adapter.Earning_Adapter;
+import com.onechampion.helper.AppController;
+import com.onechampion.helper.Model;
+import com.onechampion.luck_draw.Dialog.Dialog_Earning;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import static com.onechampion.Wallet.txtcoin;
+import static com.onechampion.helper.Constatnt.ACCESS_KEY;
+import static com.onechampion.helper.Constatnt.ACCESS_Value;
+import static com.onechampion.helper.Constatnt.API;
+import static com.onechampion.helper.Constatnt.Base_Url;
+import static com.onechampion.helper.Constatnt.POINTS;
+import static com.onechampion.helper.Constatnt.USERNAME;
+import static com.onechampion.helper.Constatnt.USER_TRACKER;
+
+public class Earning extends Fragment {
+
+    RecyclerView recyclerView;
+    private LinearLayoutManager linearLayoutManager;
+    int coin = 0;
+    ProgressDialog Asycdialog;
+    Earning_Adapter adapter;
+    private List<Model> historyList = new ArrayList<>();
+    TextView nodata;
+    int RecyclerViewItemPosition;
+    View view;
+    ArrayList<String> get_type;
+    ArrayList<String> get_point;
+    ArrayList<String> get_id;
+    ArrayList<String> get_date;
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+
+        super.onCreate(savedInstanceState);
+        View v = inflater.inflate( R.layout.recycleview, container, false);
+        recyclerView = (RecyclerView) v.findViewById(R.id.recycleview);
+        linearLayoutManager = new LinearLayoutManager(getContext());
+        Asycdialog = new ProgressDialog(getContext());
+        nodata = (TextView) v.findViewById(R.id.nodata);
+        get_date = new ArrayList<>();
+        get_type = new ArrayList<>();
+        get_point = new ArrayList<>();
+        get_id = new ArrayList<>();
+        recyclerView.setLayoutManager(linearLayoutManager);
+        prepareData();
+        recyclerView.addOnItemTouchListener(new RecyclerView.OnItemTouchListener() {
+
+            GestureDetector gestureDetector = new GestureDetector(getActivity(), new GestureDetector.SimpleOnGestureListener() {
+
+                @Override
+                public boolean onSingleTapUp(MotionEvent motionEvent) {
+
+                    return true;
+                }
+
+            });
+
+            @Override
+            public boolean onInterceptTouchEvent(RecyclerView Recyclerview, MotionEvent motionEvent) {
+
+                view = Recyclerview.findChildViewUnder(motionEvent.getX(), motionEvent.getY());
+
+                if (view != null && gestureDetector.onTouchEvent(motionEvent)) {
+
+                    //Getting RecyclerView Clicked Item value.
+                    RecyclerViewItemPosition = Recyclerview.getChildAdapterPosition(view);
+                    full_details(get_date.get(RecyclerViewItemPosition), get_type.get(RecyclerViewItemPosition), get_point.get(RecyclerViewItemPosition), get_id.get(RecyclerViewItemPosition));
+                    // Showing RecyclerView Clicked Item value using Toast.
+                    // Toast.makeText(getActivity(), Game_url_arrey.get(RecyclerViewItemPosition), Toast.LENGTH_LONG).show();
+                }
+
+                return false;
+            }
+
+            @Override
+            public void onTouchEvent(RecyclerView Recyclerview, MotionEvent motionEvent) {
+
+            }
+
+            @Override
+            public void onRequestDisallowInterceptTouchEvent(boolean disallowIntercept) {
+
+            }
+        });
+        return v;
+    }
+
+    private View.OnClickListener okListener = new View.OnClickListener() {
+
+        public void onClick(View v) {
+            Intent i = new Intent(getContext(), Activity_Payment.class);
+            //i.putExtra("coin", 30000);
+            i.putExtra("coin", txtcoin);
+            startActivity(i);
+        }
+
+    };
+    public void full_details(String get_date, String get_type,String get_point,String get_id){
+        FragmentManager fragmentManager = getFragmentManager();
+        Dialog_Earning newFragment = new Dialog_Earning();
+        Bundle bundle = new Bundle();
+        bundle.putString("get_type", get_type);
+        bundle.putString("get_date", get_date);
+        bundle.putString("get_point", get_point);
+        bundle.putString("get_id", get_id);
+        newFragment.setArguments(bundle);
+        FragmentTransaction transaction =

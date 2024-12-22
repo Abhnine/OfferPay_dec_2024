@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1643886872/Kpl_Pro.iml" filepath="$PROJECT_DIR$/.idea/modules/1643886872/Kpl_Pro.iml" group="Kpl_Pro" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app.iml" group="Kpl Pro/app" />
+    </modules>
+  </component>
+</project>

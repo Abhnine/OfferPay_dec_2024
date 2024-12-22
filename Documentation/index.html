@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+  <link href="assets/images/favicon.png" rel="icon" />
+  <title>Documentation | PlayPoint</title>
+  <meta name="description" content="Your ThemeForest item Name and description">
+  <meta name="author" content="harnishdesign.net">
+
+  <!-- Stylesheet
+============================== -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap/css/bootstrap.min.css" />
+  <!-- Font Awesome Icon -->
+  <link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css" />
+  <!-- Magnific Popup -->
+  <link rel="stylesheet" type="text/css" href="assets/vendor/magnific-popup/magnific-popup.min.css" />
+  <!-- Highlight Syntax -->
+  <link rel="stylesheet" type="text/css" href="assets/vendor/highlight.js/styles/github.css" />
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css" />
+</head>
+
+<body data-spy="scroll" data-target=".idocs-navigation" data-offset="125">
+
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="lds-ellipsis">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <!-- Preloader End -->
+
+  <!-- Document Wrapper
+=============================== -->
+  <div id="main-wrapper">
+
+    <!-- Header
+  ============================ -->
+    <header id="header" class="sticky-top">
+      <!-- Navbar -->
+      <nav class="primary-menu navbar navbar-expand-lg navbar-dropdown-dark">
+        <div class="container-fluid">
+          <!-- Sidebar Toggler -->
+          <button id="sidebarCollapse" class="navbar-toggler d-block d-md-none" type="button"><span></span><span
+              class="w-75"></span><span class="w-50"></span></button>
+
+          <!-- Logo -->
+          <h3 class="mb-0 ml-2" title="PlayPoint Documentation" style="font-weight:600;"> PlayPoint </h3>
+          <span class="text-2 ml-2">v1.5</span>
+          <!-- Logo End -->
+
+
+        </div>
+      </nav>
+      <!-- Navbar End -->
+    </header>
+    <!-- Header End -->
+
+
+    <div id="content" role="main">
+
+      <div class="idocs-navigation bg-light">
+        <ul class="nav flex-column ">
+          <li class="nav-item"><a class="nav-link active" href="#application_setup">Introduction</a>
+          </li>
+          <li class="nav-item"><a class="nav-link active" href="#installation">Installation</a>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link" href="#Admin_Panel">Installing Admin Panel</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link active" href="#App_Configuration">App Configuration</a>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link" href="#appname">Change App Name</a></li>
+              <li class="nav-item"><a class="nav-link" href="#appicon">Change App Logo</a></li>
+              <li class="nav-item"><a class="nav-link" href="#package">Change Package Name</a></li>
+              <li class="nav-item"><a class="nav-link" href="#Lucky_wheel">Change Lucky wheel coins</a></li>
+              <li class="nav-item"><a class="nav-link" href="#Firebase">Setup Firebase & One Signal</a></li>
+              <li class="nav-item"><a class="nav-link" href="#Facebook">Setup Facebook login</a></li>
+              <li class="nav-item"><a class="nav-link" href="#Email_login">Setup Email login</a></li>
+              <li class="nav-item"><a class="nav-link" href="#admin_url">Configure Admin Panel On Android App</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link active" href="#Admin_Configuration">Admin panel Configuration</a>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link" href="#Admin_Credential">Admin Login Credentials</a></li>
+              <li class="nav-item"><a class="nav-link" href="#Games">Games</a></li>
+              <li class="nav-item"><a class="nav-link" href="#Users">Users</a></li>
+              <li class="nav-item"><a class="nav-link" href="#Withdrawals">Withdrawals</a></li>
+              <li class="nav-item"><a class="nav-link" href="#Visit_Earn">Visit & Earn</a></li>
+              <li class="nav-item"><a class="nav-link" href="#Refferal_messege">Referral Configuration</a></li>
+              <li class="nav-item"><a class="nav-link" href="#Referral_Missions">Referral Missions</a></li>
+              <li class="nav-item"><a class="nav-link" href="#Banners">Banners</a></li>
+              <li class="nav-item"><a class="nav-link" href="#Pages">Pages</a></li>
+
+
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link active" href="#adnetworks_Configuration">Adnetworks Configuration</a>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link" href="#OfferWall">Sdk OfferWall</a></li>
+              <li class="nav-item"><a class="nav-link" href="#Adnetwork">Adnetwork</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link active" href="#Play_Console">Play Console</a>
+            <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#Data_Safety">Data Safety Form</a></li>
+          </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link active" href="#Activation">Activation</a>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link" href="#Verify">Verify</a></li>
+              <li class="nav-item"><a class="nav-link" href="#Activate_Licence">Activate Licence</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#support">Support</a></li>
+        </ul>
+      </div>
+
+      <div class="idocs-content">
+        <div class="container">
+
+          <section id="application_setup">
+            <h1>Introduction</h1>
+            <h2>PlayPoint - Android App with Admin Panel</h2>
+            <p>Thank you for purchasing PlayPoint Before you get started, please be sure to always check out these
+              documentation files. We outline all kinds of good information, and provide you with all the details you
+              need to know on how to use PlayPoint Application.</p>
+            <h5>What is included in the price?</h5>
+            <p>PlayPoint App + Admin Panel</p>
+            <p>Lifetime Updates</p>
+            <p>Documentation</p>
+            <p>Premium Support - <strong>Telegram Us</strong> <strong class="alert alert-info">@CSMDevelopers</strong>
+              or <a class="alert alert-info" target="_blank" href="mailto:contact.csmdevs@gmail.com"><strong>Email
+                  Us</strong></a></p>
+            <h5>Do you Provide Customization Services ?</h5>
+            <H6><strong>yes!</strong> We provide almost all Services : </h6>
+            <ul class="col-6">
+              <li> Admin Panel Installation </li>
+              <li> Admin Panel Updation </li>
+              <li> App reskin </li>
+              <li> App UI/UX Modification </li>
+              <li> APP WhiteLabeling </li>
+              <li> Adding New AdNetworks </li>
+              <li> Adding Any New Features </li>
+              <li> Website Setup </li>
+              <li> And Almost anything .. </li>
+            </ul>
+            <p class="alert alert-info">For Prices and more info, please Contact Us on Telegram
+              <strong>@CSMDevelopers</strong> or <a target="_blank"
+                href="mailto:contact.csmdevs@gmail.com"><strong>Email Us</strong></a> </p>
+            <hr>
+            <div class="row">
+              <div class="col-sm-6 col-lg-4">
+                <ul class="list-unstyled">
+                  <li><strong>Version:</strong> 1.2</li>
+                  <li><strong>Author:</strong> <a href="https://codecanyon.net/user/csmdevelopers/portfolio"
+                      target="_blank">CSM Developers</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-6 col-lg-4">
+
+              </div>
+            </div>
+          </section>
+
+          <hr class="divider">
+
+          <section id="installation">
+            <h2>Installation</h2>
+            <p>When you download the Script from Codecanyon, you will get an archive file in <strong>.zip</strong>
+              extension.
+              <strong>You need to unzip that archive.</strong> When done, you should see <strong>New upload</strong>
+              folder (Folder name can be changed from version to version).
+            </p>
+            <p>Follow the steps below to open your project on android studio:</p>
+            <ol>
+              <li>Open Android Studio</li>
+              <li>In extracted archive folder Find <strong>PlayPoint - App Folder</strong></li>
+              <li>In Android Studio Click On Open, Now Select The <strong>PlayPoint - App Folder Path</strong></li>
+              <li><strong>Congratulation,</strong> You Successfully Open PlayPoint Project On Android Studio.</li>
+              <ul>
+            </ol>
+          </section>
+
+          <hr class="divider">
+
+          <section id="Admin_Panel">
+            <h2>install Admin Panel</h2>
+            <div class="alert alert-success">
+              <strong>Watch This video To Learn installation Of Admin Panel</strong>
+            </div>
+            <div class="alert alert-danger">
+              <strong>Note:- When you install the admin panel then go to <span style="color: blue;">project/env</span>
+                to connect the database with admin panel.</strong>
+            </div>
+
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/e6WR2xufWjA"
+                allowfullscreen=""></iframe>
+            </div>
+          </section>
+
+
+          <hr class="divider">
+          <section id="App_Configuration">
+            <section id="appname">
+              <h2>Change App Name</h2>
+              <div class="alert alert-success">
+                <strong> Go To - app> src> main> res> values> Strings.xml></strong>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <p><a class="popup-img" href="assets/images/app-name.png"><img class="img-fluid border"
+                        src="assets/images/app-name.png" alt=""></a></p>
+                </div>
+              </div>
+            </section>
+
+            <hr class="divider">
+
+            <section id="appicon">
+              <h2>Change App Logo</h2>
+              <div>
+                <pre><strong>Watch This Tutorial To Change App Logo</strong></pre>
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/2M6Uvc_LFYY"
+                    allowfullscreen=""></iframe>
+                </div>
+
+            </section>
+            <hr class="divider">
+
+            <section id="package">
+              <h2>Change App Package</h2>
+              <div class="lead mb-5 alert alert-success"><strong>Go to gradle script> build.gradle</strong>
+              </div>
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/4RfmvsvDJww"
+                  allowfullscreen=""></iframe>
+              </div>
+            </section>
+            <hr class="divider">
+
+            <section id="Lucky_wheel">
+              <h2>Change Spin wheel coins</h2>
+              <div class="alert alert-success">
+                <strong> Go To - app> src> main> res> values> strings.xml></strong>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <p><a class="popup-img" href="assets/images/Lucky_wheel.png"><img class="img-fluid border"
+                        src="assets/images/Lucky_wheel.png" alt=""></a></p>
+                </div>
+              </div>
+            </section>
+            <hr class="divider">
+        <section id="Firebase">
+            <h2>How to Setup Firebase & One Signal</h2>
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/yH3mmAJkoZg?si" allowfullscreen=""></iframe>
+              </div>
+              <br>
+              <h2>Add One Signal App Id</h2>
+              <div class="col-lg-6">
+                <p><a class="popup-img" href="assets/images/One_Signal.png"><img class="img-fluid border" src="assets/images/One_Signal.png" alt=""></a></p>
+                 </div>
+          </section>
+
+        <hr class="divider">
+        <section id="Facebook">
+            <h2>Facebook login Details</h2>
+            <div class="alert alert-success">
+          <strong>Go to directory <br>
+            1. app > res > values > strings.xml</strong>
+              </div>
+            <div class="row">
+        <div class="col-lg-6">
+        <p><a class="popup-img" href="assets/images/facebook_login.png"><img class="img-fluid border" src="assets/images/facebook_login.png" alt=""></a></p>
+        </div>
+        </div>
+          </section>
+
+          <hr class="divider">
+          <section id="Email_login">
+              <h2>Email login Satup</h2>
+              <div class="alert alert-success">
+            <strong>go to firebase - authentication/sign-in methods</strong></div>
+            <div class="alert alert-secondary">
+            <strong>Enable the email password login from the firebase.</strong></div>
+                
+              <div class="row">
+          <div class="col-lg-6">
+          <p><a class="popup-img" href="assets/images/Email_login.png"><img class="img-fluid border" src="assets/images/Email_login.png" alt=""></a></p>
+          </div>
+          </div>
+            </section>
+
+            <hr class="divider">
+            <section id="admin_url">
+              <h2>Connect App With Admin Panel</h2>
+              <div class="alert alert-success">
+              <strong>app> src> main> java> com> image_app >csmarket >helper
+                  >constant></strong></div>
+              <div class="alert alert-secondary">
+                <strong>Add your admin panel URl to connect with App</strong>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <p><a class="popup-img" href="assets/images/admin-url.png"><img class="img-fluid border"
+                        src="assets/images/admin-url.png" alt=""></a></p>
+                </div>
+              </div>
+            </section>
+
+          </section>
+
+
+          <hr class="divider">
+
+          <section id="Admin_Configuration">
+            <section id="Admin_Credential">
+
+              <h3>First time Admin Panel login</h3>
+              <p>When you login admin panel for first time you will get a license verfication page. Get your licence
+                code By Going On <Strong class="alert alert-info"><a href="#Verify">Verify</a></Strong> Page, After
+                Getting licence code Fill Them On Verification Page And click on activate to verify successfully.</p>
+              <div class="row">
+                <div class="col-lg-6">
+                  <p><a class="popup-img" href="assets/images/need_Activate.png"><img class="img-fluid border"
+                        src="assets/images/need_Activate.png" alt=""></a></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <p><a class="popup-img" href="assets/images/Activated.png"><img class="img-fluid border"
+                        src="assets/images/Activated.png" alt=""></a></p>
+                </div>
+              </div>
+              <h4>Admin Panel details</h4>
+              <p>
+                Email: admin@admin.com
+                <br>
+                Password: password
+                <br>
+
+              <p>To Access the Admin dashboard, go to your-domain.com/login.php then, you will be shown the below
+                screen, Enter Defualt Admin Account login details to login,</p>
+              <div class="row">
+                <div class="col-lg-6">
+                  <p><a class="popup-img" href="assets/images/Login_page.png"><img class="img-fluid border"
+                        src="assets/images/Login_page.png" alt=""></a></p>
+                </div>
+              </div>
+              <br>
+              <p>This will be your Admin dashboard, you can manage everything from here,</p>
+              <div class="row">
+                <div class="col-lg-6">
+                  <p><a class="popup-img" href="assets/images/Dashboard.png"><img class="img-fluid border"
+                        src="assets/images/Dashboard.png" alt=""></a></p>
+                </div>
+              </div>
+              <hr class="divider">
+              <section id="Games">
+                <div class="alert alert-success">
+                  <strong> Go To - /Games</strong>
+                </div>
+                <p>Here You can see all the games you added into your app or you can add/remove games</p>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <p><a class="popup-img" href="assets/images/Games.png"><img class="img-fluid border"
+                          src="assets/images/Games.png" alt=""></a></p>
+                  </div>
+                </div>
+                <p>Add New Games With Time And Coins Configuration.</p>
+                <div class="col-lg-6">
+                  <p><a class="popup-img" href="assets/images/Add_Games.png"><img class="img-fluid border"
+                        src="assets/images/Add_Games.png" alt=""></a></p>
+                </div>
+
+                <p>Edit Games.</p>
+                <div class="col-lg-6">
+                  <p><a class="popup-img" href="assets/images/Edit_games.png"><img class="img-fluid border"
+                        src="assets/images/Edit_games.png" alt=""></a></p>
+                </div>
+
+              </section>
+
+              <hr class="divider">
+              <section id="Users">
+                <div class="alert alert-success">
+                  <strong> Go To - /Users</strong>
+                </div>
+                <p>You Can Manage All Users Activity From Here.,</p>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <p><a class="popup-img" href="assets/images/Users.png"><img class="img-fluid border"
+                          src="assets/images/Users.png" alt=""></a></p>
+                  </div>
+                </div>
+                <p>Edit Users.,</p>
+                <div class="col-lg-6">
+                  <p><a class="popup-img" href="assets/images/User_Edit.png"><img class="img-fluid border"
+                        src="assets/images/User_Edit.png" alt=""></a></p>
+                </div>
+                <p>Track Users Activity.,</p>
+                <div class="col-lg-6">
+                  <p><a class="popup-img" href="assets/images/User_Tracker.png"><img class="img-fluid border"
+                        src="assets/images/User_Tracker.png" alt=""></a></p>
+                </div>
+                <p>Block/Unblock Users.,</p>
+                <div class="col-lg-6">
+                  <p><a class="popup-img" href="assets/images/User_Block.png"><img class="img-fluid border"
+                        src="assets/images/User_Block.png" alt=""></a></p>
+                </div>
+
+                <p>App Activity.</p>
+                <div class="col-lg-6">
+                  <p><a class="popup-img" href="assets/images/User_Activity.png"><img class="img-fluid border"
+                        src="assets/images/User_Activity.png" alt=""></a></p>
+                </div>
+
+
+              </section>
+              <hr class="divider">
+
+              <section id="Withdrawals">
+                <div class="alert alert-success">
+                  <strong> Go To - /Redeem Requests</strong>
+                </div>
+                <p>you can manage Every Payout Request from your users here,</p>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <p><a class="popup-img" href="assets/images/Redeem.png"><img class="img-fluid border"
+                          src="assets/images/Redeem.png" alt=""></a></p>
+                  </div>
+                </div>
+                <p>You can manage/track users from here, Track users to see if thay are legit or not then you can
+                  approve or reject the requast depends on the situation. copy users payout Address by clicking the
+                  button.</p>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <p><a class="popup-img" href="assets/images/Redeem_Options.png"><img class="img-fluid border"
+                          src="assets/images/Redeem_Options.png" alt=""></a></p>
+                  </div>
+                </div>
+
+                <div class="alert alert-success">
+                  <strong> Go To - Redeem Methods</strong>
+                </div>
+                <p>You Can Add/Remove Withdrawal Mathods From Here.</p>
+                <div class="col-lg-6">
+                  <p><a class="popup-img" href="assets/images/Add_Payout.png"><img class="img-fluid border"
+                        src="assets/images/Add_Payout.png" alt=""></a></p>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <p><a class="popup-img" href="assets/images/Payout_Mathods.png"><img class="img-fluid border"
+                          src="assets/images/Payout_Mathods.png" alt=""></a></p>
+                  </div>
+                </div>
+
+                <p>You Can Add/Remove Withdrawal Amount Packs From Here.</p>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <p><a class="popup-img" href="assets/images/Payout_packeges.png"><img class="img-fluid border"
+                          src="assets/images/Payout_packeges.png" alt=""></a></p>
+                  </div>
+                </div>
+              </section>
+              <hr class="divider">
+
+
+              <hr class="divider">
+              <section id="Visit_Earn">
+                <div class="alert alert-success">
+                  <strong> Go To - /Visit & Earn</strong>
+                </div>
+                <p>You Can Add Any Link Here And Configure The Coins And Timer.</p>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <p><a class="popup-img" href="assets/images/Visit_Earn.png"><img class="img-fluid border"
+                          src="assets/images/Visit_Earn.png" alt=""></a></p>
+                  </div>
+                </div>
+
+                <p>Add Any Link Here To Add Visit And Earn.</p>
+                <div class="col-lg-6">
+                  <p><a class="popup-img" href="assets/images/Add_Link.png"><img class="img-fluid border"
+                        src="assets/images/Add_Link.png" alt=""></a></p>
+                </div>
+              </section>
+
+              <section id="Refferal_messege">
+
+                <h2>Referral Configuration</h2>
+                <div class="alert alert-success">
+                  <strong>You can Configure Refferal settings from here.</strong>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <p><a class="popup-img" href="assets/images/Refferal_messege.png"><img class="img-fluid border"
+                          src="assets/images/Refferal_messege.png" alt=""></a></p>
+                  </div>
+                </div>
+              </section>
+
+              <section id="Referral_Missions">
+                <div class="alert alert-success">
+                  <strong> Go To - /Referral Missions</strong>
+                </div>
+                <p>These Are The Refferal Missions.</p>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <p><a class="popup-img" href="assets/images/Referral_Missions.png"><img class="img-fluid border"
+                          src="assets/images/Referral_Missions.png" alt=""></a></p>
+                  </div>
+                </div>
+
+                <p>Add Referral Users And Coins To Add New Missions.</p>
+                <div class="col-lg-6">
+                  <p><a class="popup-img" href="assets/images/add_Ref_Mission.png"><img class="img-fluid border"
+                        src="assets/images/add_Ref_Mission.png" alt=""></a></p>
+                </div>
+              </section>
+
+              <section id="Banners">
+                <div class="alert alert-success">
+                  <strong> Go To - /Banners</strong>
+                </div>
+                <p>Add Banners And It Will Show At Top Of The App.</p>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <p><a class="popup-img" href="assets/images/Banners.png"><img class="img-fluid border"
+                          src="assets/images/Banners.png" alt=""></a></p>
+                  </div>
+                </div>
+
+                <p>Add New Banner.</p>
+                <div class="col-lg-6">
+                  <p><a class="popup-img" href="assets/images/Add_Banners.png"><img class="img-fluid border"
+                        src="assets/images/Add_Banners.png" alt=""></a></p>
+                </div>
+              </section>
+
+              <section id="Pages">
+                <div class="alert alert-success">
+                  <strong> Go To - /Pages</strong>
+                </div>
+                <div class="alert alert-dark">
+                  <strong>These Are The Importent Pages You Need.</strong>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <p><a class="popup-img" href="assets/images/Pages.png"><img class="img-fluid border"
+                          src="assets/images/Pages.png" alt=""></a></p>
+                  </div>
+                </div>
+                <div class="alert alert-dark">
+                  <strong>Edit These Pages And Add Your Taxt here.</strong>
+                </div>
+                <div class="col-lg-6">
+                  <p><a class="popup-img" href="assets/images/Edit_Pages.png"><img class="img-fluid border"
+                        src="assets/images/Edit_Pages.png" alt=""></a></p>
+                </div>
+              </section>
+            </section>
+
+          </section>
+          <hr class="divider">
+          <section id="adnetworks_Configuration">
+            <section id="OfferWall">
+
+              <h2>Sdk Offerwall Config</h2>
+
+              <div class="alert alert-warning">
+                <p><strong>Note :</strong> in starting we suggest you don't apply for Offerwalls because if you don't
+                  have traffic on your app then offerwall companys may reject your account requast.</p>
+              </div>
+              <div class="alert alert-secondary">
+                <strong>You Can Add Your OfferWalls ID Here.</strong>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <p><a class="popup-img" href="assets/images/Offerwalls.png"><img class="img-fluid border"
+                        src="assets/images/Offerwalls.png" alt=""></a></p>
+                </div>
+              </div>
+              <div class="alert alert-secondary">
+                <strong>fill the required details here.</strong>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <p><a class="popup-img" href="assets/images/Add_OffersID.png"><img class="img-fluid border"
+                        src="assets/images/Add_OffersID.png" alt=""></a></p>
+                </div>
+              </div>
+              <div class="alert alert-secondary">
+                <strong>You Can Configure Offerwalls postback.</strong>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <p><a class="popup-img" href="assets/images/Postback.png"><img class="img-fluid border"
+                        src="assets/images/Postback.png" alt=""></a></p>
+                </div>
+              </div>
+
+            </section>
+
+            <hr class="divider">
+
+            <section id="Adnetwork">
+              <h2>AdNetwork Config</h2>
+              <div class="alert alert-warning">
+                <h4 class="alert-heading">AdNetwork List</h4><br><strong> 1. Google Admob ( We don't recommend using
+                  AdMob ads in an earnings app as it poses a risk of account suspension) <br> 2. <a
+                    href="https://portal.start.io/#/signin">StartApp</a><br>
+                  3. <a href="https://unityads.unity3d.com/">Unity</a><br> 4. <a
+                    href="https://www.adcolony.com/better-technology/">Adcolony</a><br> 5. <a
+                    href="https://www.applovin.com/">Applovin</a> Max you can also use facebook bidding with applovin
+                  <br>5. <a href="https://en-gb.facebook.com/audiencenetwork/">Facebook</a> 
+                  <br>6. <a href="https://app.vungle.com/login/?original=https%3A%2F%2Fpublisher.vungle.com%2F">Vungle</a>
+                  <br>7. <a href="https://www.chartboost.com/">Chartboost</a></strong>
+              </div>
+              <div class="alert alert-dark">
+                <strong>Replace your Admob App ID & Applovin Sdk Key.</strong>
+              </div>
+              <div class="alert alert-success">
+                <strong>// res> values> strings > string.xml</strong>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <p><a class="popup-img" href="assets/images/Applovinmaxkey.png"><img class="img-fluid border"
+                        src="assets/images/Applovinmaxkey.png" alt=""></a></p>
+                </div>
+              </div>
+              <div class="alert alert-dark">
+                <strong>Replace your Applovin api Key and then click on sync.</strong>
+              </div>
+              <div class="alert alert-success">
+                <strong>//gradle script> build.gradle</strong>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <p><a class="popup-img" href="assets/images/Applovin_Api.png"><img class="img-fluid border"
+                        src="assets/images/Applovin_Api.png" alt=""></a></p>
+                </div>
+              </div>
+
+              <div class="alert alert-dark">
+                <strong>These are the all Adnetwork app have and you can Configure from admin panel.</strong>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <p><a class="popup-img" href="assets/images/Adnetworks.png"><img class="img-fluid border"
+                        src="assets/images/Adnetworks.png" alt=""></a></p>
+                </div>
+
+              </div>
+              <div class="alert alert-dark">
+                <strong>by adding your ad id you can setup watch video ads and other interstitial, rewarded etc.</strong>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <p><a class="popup-img" href="assets/images/Add_Networks.png"><img class="img-fluid border"
+                        src="assets/images/Add_Networks.png" alt=""></a></p>
+                </div>
+              </div>
+            </section>
+
+
+          </section>
+          <hr class="divider">
+
+          <section id="Play_Console">
+            <section id="Data_Safety">
+            <h1>Data Safety Form</h1>
+            <div class="alert alert-danger">
+            <strong>Note: If you dont follow these step your app might get delete from google play store and we are not responsible for that.</strong></div>
+            <div class="alert alert-dark">
+            <strong>STEP 1 : Go to Data Safety Section</strong></div>
+            <div class="row">
+              <div class="col-lg-6">
+                <p><a class="popup-img" href="assets/images/data_form_import.png"><img class="img-fluid border"
+                      src="assets/images/data_form_import.png" alt=""></a></p>
+              </div>
+            </div>
+
+            <div class="alert alert-dark">
+              <strong>STEP 2 : Download this file and Import</strong></div>
+              <a class="btn btn-light mb-3" target="_blank" href="https://drive.google.com/file/d/1fgc-dX7yCkyiOBU9KwdEqCCyLakWYntJ/view?usp=drive_link"><strong>Data Safety Form</strong></a>
+             <br>
+           
+            <div class="alert alert-dark">
+              <strong>STEP 3: Click on Import</strong></div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <p><a class="popup-img" href="assets/images/data_safty_import2.png"><img class="img-fluid border"
+                        src="assets/images/data_safty_import2.png" alt=""></a></p>
+                </div>
+              </div>
+
+              <div class="alert alert-success">
+                <strong>STEP 4 : Open this URL with your admin panel domain</strong></div>
+                <div class="alert alert-dark">
+                  <p>You need to add this url to the data safety <strong>delete Account URl</strong> <br>
+                    Example:- <strong>https://your-domain.xyz/data-delete</strong> <br>
+                  how can you access this url or this page so just add <strong>"/data-delete"</strong> behind your domain to open this url.</p>
+                </div>
+
+                <div class="col-lg-6">
+                  <p><a class="popup-img" href="assets/images/data-delete.png"><img class="img-fluid border"
+                        src="assets/images/data-delete.png" alt=""></a></p>
+                </div>
+
+                <br>
+              <div class="alert alert-dark">
+                <strong>Add the account deletion page url here.</strong></div>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <p><a class="popup-img" href="assets/images/Form_delete.png"><img class="img-fluid border"
+                          src="assets/images/Form_delete.png" alt=""></a></p>
+                  </div>
+                </div>
+
+                <div class="alert alert-danger">
+                  <strong>Note: If you add any custom networks please ask them for the permission they use and update them to google data safety form.</strong></div>
+            </section>
+          </section>
+          <hr class="divider">
+
+          <section id="Activation">
+            <section id="Verify">
+              <h2>Verification</h2>
+              <p>To activate your admin panel one time purchase verification is required. Follow below steps.</p>
+              <div class="alert alert-success">
+                <strong> Go To - Codecanyon/Download</strong>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <p><a class="popup-img" href="assets/images/purchase_code.png"><img class="img-fluid border"
+                        src="assets/images/purchase_code.png" alt=""></a></p>
+                </div>
+              </div>
+            </section>
+            <hr class="divider">
+            <section id="Activate_Licence">
+              <h2>Activate Licence</h2>
+              <div class="alert alert-success">
+                <p>Send Us your Item Purchase Code txt file To Verify Your Purchase, Include your Android app package
+                  And Email Address.</p>
+              </div>
+              <p><strong>Telegram Us</strong> <strong class="alert alert-info">@CSMDevelopers</strong> or <a
+                  class="alert alert-info" target="_blank" href="mailto:contact.csmdevs@gmail.com"><strong>Email
+                    Us</strong></a></p>
+            </section>
+          </section>
+          <hr class="divider">
+
+          <section id="support">
+            <h2>Support</h2>
+            <p>If this documentation doesn't answer your questions, So, Please send us Email via <a
+                class="btn btn-primary" target="_blank" href="mailto:contact.csmdevs@gmail.com">Email Support</a></p>
+            <div class="alert alert-warning mb-4"><span class="badge badge-danger text-uppercase">Note:</span> While we
+              aim to provide the best support possible, please keep in mind that it only extends to verified buyers and
+              only to issues related to our application like bugs and errors. Custom modifications or third party module
+              implementations are not included.</div>
+            <h4>Don’t forget to Rate this application
+              <i class="fas fa-star text-warning"></i> <i class="fas fa-star text-warning"></i> <i
+                class="fas fa-star text-warning"></i> <i class="fas fa-star text-warning"></i> <i
+                class="fas fa-star text-warning"></i>
+            </h4>
+            <div class="alert alert-success">
+              Please Add your Review (Opinion) for Our Application. It would be a great support for us.<br>
+              Go to your <strong>Codecanyon Profile</strong> > <strong>Downloads Tab</strong> > & then You can Rate &
+              Review for our application.<br>
+              Thank You.
+            </div>
+          </section>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  </div>
+
+  <!-- Back To Top -->
+  <a id="back-to-top" data-toggle="tooltip" title="Back to Top" href="javascript:void(0)"><i
+      class="fa fa-chevron-up"></i></a>
+
+  <!-- JavaScript
+============================ -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Highlight JS -->
+  <script src="assets/vendor/highlight.js/highlight.min.js"></script>
+  <!-- Easing -->
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <!-- Magnific Popup -->
+  <script src="assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+  <!-- Custom Script -->
+  <script src="assets/js/theme.js"></script>
+</body>
+
+</html>

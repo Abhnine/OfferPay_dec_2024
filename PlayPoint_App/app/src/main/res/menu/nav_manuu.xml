@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/play"
+        android:icon="@drawable/ic_csm_home"
+        android:title="Home"
+        android:enabled="true"
+        app:cnb_iconColor="#CDBBFF"
+        android:checked="true"/>
+
+    <item
+        android:id="@+id/redeem"
+        android:icon="@drawable/ic_csm_reward"
+        android:title="Redeem"
+        app:cnb_iconColor="#CDBBFF" />
+    <item
+        android:id="@+id/battle"
+        android:icon="@drawable/ic_csm_leader"
+        android:title="Leaderboard"
+        app:cnb_iconColor="#CDBBFF" />
+
+    <item
+        android:id="@+id/refer"
+        android:icon="@drawable/ic_csm_refer"
+        android:title="Refer"
+        app:cnb_iconColor="#CDBBFF" />
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_csm_profile"
+        android:title="Profile"
+        app:cnb_iconColor="#CDBBFF" />
+</menu>

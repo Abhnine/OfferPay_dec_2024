@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "103958418893",
+    "project_id": "offerpay-d3103",
+    "storage_bucket": "offerpay-d3103.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:103958418893:android:d9d49cc7ec155df1f4e084",
+        "android_client_info": {
+          "package_name": "com.earncash.rewardsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "103958418893-tni3femhckq2lvn0pvgtarvkhqur8t1g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.earncash.rewardsapp",
+            "certificate_hash": "8ad2bef94f849574837a753e25c28b93ec3a0921"
+          }
+        },
+        {
+          "client_id": "103958418893-ldc2bi5gbpjm1o40j493mddgp109lpc8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBYaud5gvxxepLBDuMc1v1kUESy8wbsms"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "103958418893-ldc2bi5gbpjm1o40j493mddgp109lpc8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

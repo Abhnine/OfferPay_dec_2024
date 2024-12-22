@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".csm.activity.TransActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/arrow_back_2"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            app:tint="@color/white" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="transaction history"
+            android:textAllCaps="true"
+            android:fontFamily="@font/main_one"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_centerVertical="true"/>
+
+
+
+
+    </RelativeLayout>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginBottom="15dp"
+        android:layout_below="@id/head"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="6dp">
+
+        <LinearLayout
+            android:paddingHorizontal="5dp"
+            android:gravity="center"
+            android:background="@drawable/bg_csm_home_btn"
+            android:layout_width="match_parent"
+            android:layout_height="46dp">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tab"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:orientation="horizontal"
+                app:tabIndicatorColor="@color/white"
+                app:tabBackground="@drawable/btn_csm_tab_layout"
+                app:tabTextAppearance="@style/tab_text"
+                app:tabIndicatorHeight="0dp"
+                app:tabTextColor="@color/white">
+
+
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="ACTIVITY" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Request" />
+
+
+            </com.google.android.material.tabs.TabLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:layout_below="@id/top"
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </androidx.viewpager2.widget.ViewPager2>
+
+
+
+
+</RelativeLayout>
